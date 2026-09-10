@@ -13,7 +13,7 @@ Der vollständige Stand wurde erfolgreich nach https://github.com/johanr-blip/os
 - Native Shopify-Formulare vorbereitet. Warteliste und Verkauf im Grundzustand deaktiviert.
 - Preorder-Integration über App-Blöcke vorgesehen, aber keine App installiert oder getestet.
 - Die drei Produktzustände Warteliste, Preorder und Live sind vorgesehen; die Bundle-Section kann echte Shopify-Bundle-Produkte verlinken. Diese Bundle-Produkte sind noch nicht angelegt.
-- Sieben KI-Konzeptbilder, optimierte Bilddateien, lokale Archivo-Schrift und Provenienzdokumentation.
+- Sieben ursprüngliche KI-Konzeptbilder plus zwei gewünschte Haar-/Augenfarbenvarianten: OSTFRAU hellblond mit blauen Augen, OSTMANN dunkelblond. Die aktuellen Hero-WebPs verwenden die Varianten; ursprüngliche PNGs bleiben erhalten. Lokale Archivo-Schrift und Provenienzdokumentation liegen bei.
 - Shopify: Theme `205871546705` unveröffentlicht hochgeladen, zehn Produktentwürfe, drei Collections, 13 neue Seiten, vier Metaobject-Definitionen und zehn Produkt-Metafield-Definitionen erstellt.
 - Separate interne Rechteakte mit Storefront-Zugriff NONE.
 - Kalkulation, Markengrundlage, Launchplan, Originalbrief und modellunabhängige Entwicklerübergabe.

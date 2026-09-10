@@ -1,5 +1,36 @@
 # OST concept image provenance
 
+## Hair and eye color variants — 2026-09-10
+
+User-requested edits using the built-in image tool: two calls, one per source photo. Both edited outputs were visually inspected: lighter hair, natural eye detail, pose, concrete background and chest lettering preserved. OSTFRAU uses light blonde hair and blue eyes; OSTMANN uses sandy dark blonde hair with muted natural eyes. These remain fictional design concepts. Original brown-haired PNGs are preserved as alternatives.
+
+The current `theme/assets/ostfrau-editorial.webp` and `theme/assets/ostmann-editorial.webp` use these edits. WebP conversion only, 1536 × 1024, quality 90.
+
+### ostfrau-editorial-blonde-blue-eyes.png
+
+Edit target: `assets/originals/ostfrau-editorial.png`
+
+Saved output: `assets/originals/ostfrau-editorial-blonde-blue-eyes.png`
+
+Exact edit prompt:
+
+```text
+Use case: identity-preserve. Edit target: the supplied OSTFRAU fashion photograph. Change ONLY the woman's hair to natural light golden blonde with believable darker blonde roots and fine individual strands, keeping the same loosely tied up hairstyle, and change her irises to beautiful clear natural blue with subtle realistic catchlights. The blue should be perceptible in the face without looking neon or digitally painted. Preserve her facial identity, adult age, expression, skin tone and texture, pose, anatomy, framing, camera angle, black outfit, shoes, exact white O-S-T-F-R-A-U chest lettering and concrete background. Preserve the cold muted editorial lighting, realistic photography, 3:2 landscape composition and empty left side for website text. No text overlays, no new objects, no glamour retouching. Output one standalone edited photo.
+```
+
+### ostmann-editorial-dark-blonde.png
+
+Edit target: `assets/originals/ostmann-editorial.png`
+
+Saved output: `assets/originals/ostmann-editorial-dark-blonde.png`
+
+Exact edit prompt:
+
+```text
+Use case: identity-preserve. Edit target: the supplied OSTMANN fashion photograph. Change ONLY the man's hair to natural sandy dark blonde, clearly lighter than the original brown, retaining the wavy haircut and realistic fine hair strands. Lighten his beard subtly to a matching natural dark blonde-brown. Preserve natural hazel/brown eyes; this variant must have a different eye color from the blue-eyed female image in the series. Preserve his facial identity, adult age, expression, skin tone and texture, pose, anatomy, framing, black outfit, exact white O-S-T-M-A-N-N chest lettering and raw concrete background. Keep the cold muted editorial lighting, realistic photography, 3:2 landscape composition and spacious empty left side. No text overlays, no new objects, no glamour retouching. Output one standalone edited photo.
+```
+
+
 Generated on 2026-09-10 using the built-in `image_gen.imagegen` tool. Exactly three generation calls, one per asset; no variants or retries. No input/reference images. These are fictional concept images, not documentation of real people or products.
 
 All three outputs were visually inspected. OSTMANN and OSTFRAU spelling is correct; both people are right-weighted with generous concrete negative space. The woman is framed full-body (wider than requested upper legs), which preserves crop flexibility. The product still life has the three requested items and correct OST. wordmarks. No political or DDR symbols or advertising/UI overlays observed. No edits or transformations applied.
@@ -146,4 +177,3 @@ Lighting/mood: cool clean studio lighting, minimal natural hard-edged shadow, re
 Text (verbatim): "OST." in small white clean uppercase sans-serif letters embroidered on the front, regular flat stitch embroidery; spell O-S-T followed by a period exactly.
 Constraints: no people, no mannequin visible, no hands, no UI, no advertising overlay, no additional garments or props, no extra text, no labels or watermark, no political or DDR symbols. This is an explicitly fictional design-concept catalog shot, not actual production or actual product documentation. Do not add claims about manufacturing.
 ```
-

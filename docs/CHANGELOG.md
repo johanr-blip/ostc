@@ -1,5 +1,12 @@
 # Änderungsprotokoll
 
+## 2026-09-10 — Blonde Editorial-Varianten
+
+- OSTFRAU-Aufnahme mit natürlich hellblondem Haar und blauen Augen; OSTMANN mit dunkelblondem Haar und dezent angepasstem Bart.
+- Kleidung, Wortmarken, Bildaufbau und kalte Editorial-Gestaltung beibehalten. Ursprüngliche PNGs als Alternativen erhalten; neue PNGs und genaue Edit-Prompts ergänzt.
+- Aktuelle Hero-WebPs ersetzt und lokale Vorschau neu erzeugt. Bildvarianten visuell geprüft; 29 Vorschauseiten und 868 lokale Referenzen erfolgreich geprüft. Theme-ZIP neu erzeugt.
+- Beide Bilddateien gezielt auf Theme `205871546705` hochgeladen; Rolle vor und nach Upload `unpublished`. Lokaler Vorschau-Server bedient nun direkt `preview/dist/` dieses Repositorys.
+
 ## 2026-09-10 — Initialer OST-Projektstand
 
 - Eigenes Shopify OS 2.0 Theme mit zwei Markenwelten, Header/Switch, Hero, Produktbereichen und Editorial-Sections gebaut.

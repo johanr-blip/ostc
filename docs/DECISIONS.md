@@ -13,6 +13,7 @@ Stand: 10.09.2026.
 | 10 Produktentwürfe | Tee/Hoodie/Cap je Markenwelt plus Bucket Hat, Gymbag, Tote und Poster |
 | Heavy Tee, Hoodie und Cap im primären Produktbereich | Kleines Einstiegsangebot; restliche Ideen nachgeordnet |
 | KI-Konzeptbilder gekennzeichnet | Keine realen Muster vorhanden; nicht als Produktevidenz einsetzen |
+| Blonde Varianten und teilweise blaue Augen in der Bildserie | Nutzerwunsch nach mehr Variation vom 10.09.2026; ursprüngliche Aufnahmen als Alternativen erhalten |
 | Archiv/Stimmen zunächst mit ehrlichem Leerzustand | Keine Rechtefreigaben, Interviews oder lizenzierten Porträts vorhanden |
 | Rechteakte getrennt von öffentlichem Metaobject | Schutz interner Rechte-/Einwilligungsdaten auf API-Ebene |
 | Shopify-Kundenformular für spätere Warteliste | Minimaler Stack; Double Opt-in muss im Shop aktiviert werden |
