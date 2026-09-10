@@ -1,5 +1,11 @@
 # Änderungsprotokoll
 
+## 2026-09-11 — Verbindende Markensprache
+
+- Verbliebene „nach vorn“-Formulierungen aus Live-Theme und Haltungsblock entfernt.
+- Leitclaim im Live-Theme auf `OST. — VON HIER.` gesetzt.
+- Haltungsblock auf Zusammenhalt, Liebe zur Herkunft, Offenheit sowie das Schöne und die Brüche der Geschichte ausgerichtet.
+
 ## 2026-09-10 — ostolz.de Prüfstand und vollständige Freigabelogik
 
 - Markenclaim auf `OST. — VON HIER.` umgestellt und Domain, Footer, Hero, Seiteninhalte, OSTFRAU-Seite sowie alle zehn Produktbeschreibungen und Zielpreise überarbeitet.

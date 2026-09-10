@@ -1,6 +1,6 @@
 # Aktueller Projektstand
 
-Stand: 10.09.2026. Diese Datei ist die Übergabe für andere Agenten. Nicht aus dem bloßen Vorhandensein eines Templates auf einen abgeschlossenen Geschäftsprozess schließen.
+Stand: 11.09.2026. Diese Datei ist die Übergabe für andere Agenten. Nicht aus dem bloßen Vorhandensein eines Templates auf einen abgeschlossenen Geschäftsprozess schließen.
 
 ## Gemeinsamer Arbeitsort
 
@@ -17,6 +17,7 @@ Der vollständige Stand wurde erfolgreich nach https://github.com/johanr-blip/os
 - Shopify: zehn Produktentwürfe, drei Collections, 13 neue Seiten, vier Metaobject-Definitionen und zehn Produkt-Metafield-Definitionen vorhanden. Die Weiterentwicklung wurde als separates Theme `205894418769` unveröffentlicht hochgeladen; das Live-Theme blieb unangetastet.
 - Zentrale Produktdatenbank `content/product-master.json` mit 20 Produkten und 63 Varianten, exakten vorhandenen Shopify-IDs, internen SKUs, Status-/Verkaufsmodi, Lieferantenfeldern und kostenabhängigen Deckungsbeiträgen. Zehn spätere Produkte sind nur Planung und wurden nicht in Shopify angelegt.
 - Produktbeschreibungen, Damenseite/OSTFRAU, Preise, Domain, Footer, FAQ, Versand- und Drop-Inhalte auf den neuen Stand gebracht. Die frühere Claim-Zeile wird nicht mehr verwendet.
+- Auch die weichere Restformulierung „Mit Blick nach vorn“ wurde am 11.09.2026 aus dem gemeinsamen Haltungsblock entfernt. Live- und Prüf-Theme verwenden nun verbindende Sprache zu Herkunft, Geschichte und Offenheit; das Live-Setting lautet `OST. — VON HIER.`.
 - Native Newsletter-Anmeldung mit Einwilligung, Produktinteresse und Linienpräferenz vorbereitet; bis zum echten Double-Opt-in-Test gesperrt.
 - Sicheres Updateskript für die vorhandenen Draft-Produkte und unveröffentlichten Seiten vorbereitet. Es verweigert unerwartet veröffentlichte Ziele und veröffentlicht selbst nichts.
 - Separate interne Rechteakte mit Storefront-Zugriff NONE.

@@ -27,11 +27,11 @@ Headline-Laufweite darf enger sein; Wortmarken auf Kleidungsstücken erhalten ko
 
 ## Stimme
 
-Klar, ruhig, konkret. Sätze mit Haltung, keine großen Versprechen ohne Beleg. „Bio“, Grammaturen, Produktion in Deutschland oder Lieferzeiten erst veröffentlichen, wenn das reale Produkt sie trägt. Keine erfundenen Aussagen über Gründerbiografie oder Kunden.
+Klar, ruhig, konkret. Sätze mit Haltung, keine großen Versprechen ohne Beleg. Die Sprache betont Zusammenhalt, Liebe zur Herkunft und das Schöne ebenso wie die Brüche in Heimat und Geschichte. Sie bleibt offen und verbindend, ohne Kampf-, Feind- oder Fortschrittsrhetorik. „Bio“, Grammaturen, Produktion in Deutschland oder Lieferzeiten erst veröffentlichen, wenn das reale Produkt sie trägt. Keine erfundenen Aussagen über Gründerbiografie oder Kunden.
 
 Beispiel: „Eine Stadt. Eine Familie. Die Sprache am Küchentisch. Herkunft hat viele Formen.“
 
-Die frühere Formulierung „VOM OSTEN. NACH VORN.“ wird nicht mehr verwendet. Claims bleiben sparsam, ruhig und unpolitisch.
+Die frühere Formulierung „VOM OSTEN. NACH VORN.“ und Varianten mit „nach vorn“ werden nicht mehr verwendet. Claims bleiben sparsam, ruhig und unpolitisch.
 
 ## Drop 001 Gestaltung
 
