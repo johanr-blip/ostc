@@ -16,8 +16,8 @@ GitHub-/Shopify-Logins, private Browser-Cookies, Kontoberechtigungen und kostenp
 
 ## Kalkulation bearbeiten
 
-Die Excel-Datei ist normal editierbar. `tools/finance-inputs.json` und `python3 tools/calculate.py` liefern zusätzlich eine offen lesbare Referenz ohne besondere Bibliotheken. Excel und JSON sind derzeit zwei ausdrücklich getrennte Planungskopien; bei Zahlenänderungen beide aktualisieren und Ergebnisse abstimmen.
+Die zentrale Produkt- und Kalkulationsquelle ist `content/product-master.json`. Sie enthält Produktstatus, Supplier-Zuordnung, Shopify- und Supplier-IDs, Varianten, SKUs, Preise und Kostenfelder. Die daraus erzeugte Excel-Fassung bleibt normal editierbar; Änderungen müssen anschließend bewusst in den Produkt-Master zurückgeführt werden. `tools/finance-inputs.json` und `docs/OST-Kalkulation.xlsx` sind nur noch historische Ausgangsrechnungen.
 
 ## Daten ändern
 
-`content/products.json` und `content/pages.json` sind die redaktionelle Quelle für die lokale Vorschau. Sie synchronisieren nicht automatisch mit Shopify. Ein Agent muss Änderungen gezielt auf vorhandene IDs anwenden, Fehler prüfen und danach den Remote-Stand dokumentieren. Der erneute CSV-Import oder eine komplette Erstinitialisierung ist kein allgemeiner Update-Prozess.
+`content/products.json` und `content/pages.json` enthalten die redaktionellen Texte. Preise, Varianten- und operative Produktdaten kommen aus `content/product-master.json`. Sie synchronisieren nicht automatisch mit Shopify. Ein Agent muss Änderungen gezielt auf vorhandene IDs anwenden, Fehler prüfen und danach den Remote-Stand dokumentieren. Der erneute CSV-Import oder eine komplette Erstinitialisierung ist kein allgemeiner Update-Prozess.

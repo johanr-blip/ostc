@@ -25,4 +25,4 @@ GitHub- und Shopify-Sitzungen bleiben auf dem jeweiligen Rechner. Andere Modelle
 
 ## Konflikte und Theme-Editor
 
-Shopify Theme Editor kann `config/settings_data.json` und JSON-Templates ändern. Vor Uploads auf `205871546705` einen Remote-Abzug in ein separates Arbeitsverzeichnis machen und Unterschiede prüfen. Nie einen fremden Stand durch einen pauschalen Pull oder Push überschreiben. Das Guard-Script prüft die Theme-Rolle, ersetzt aber keine inhaltliche Konfliktprüfung.
+Shopify Theme Editor kann `config/settings_data.json` und JSON-Templates ändern. Vor Uploads auf das in `config/store.json` festgelegte unveröffentlichte Prüf-Theme einen Remote-Abzug in ein separates Arbeitsverzeichnis machen und Unterschiede prüfen. Nie einen fremden Stand durch einen pauschalen Pull oder Push überschreiben. Das Guard-Script prüft die Theme-Rolle, ersetzt aber keine inhaltliche Konfliktprüfung.

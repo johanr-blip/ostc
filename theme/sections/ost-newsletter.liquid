@@ -1,4 +1,4 @@
-<section class="newsletter section wrap" id="waitlist"><div><p class="eyebrow">{{ section.settings.kicker | escape }}</p><h2>{{ section.settings.heading | escape }}</h2><p>{{ section.settings.copy | escape }}</p></div><div>{% render 'ost-newsletter-form', section: section %}</div></section>
+<section class="newsletter section wrap" id="waitlist"><div><p class="eyebrow">{{ section.settings.kicker | escape }}</p><h2>{{ section.settings.heading | escape }}</h2><p>{{ section.settings.copy | escape }}</p>{% if product != blank %}<p class="note">Interesse: {{ product.title | escape }}</p>{% endif %}</div><div>{% render 'ost-newsletter-form', section: section, product: product %}</div></section>
 
 {% schema %}
 {

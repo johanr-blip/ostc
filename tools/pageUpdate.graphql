@@ -1,0 +1,13 @@
+mutation OSTPageUpdate($id: ID!, $page: PageUpdateInput!) {
+  pageUpdate(id: $id, page: $page) {
+    page {
+      id
+      handle
+      isPublished
+    }
+    userErrors {
+      field
+      message
+    }
+  }
+}

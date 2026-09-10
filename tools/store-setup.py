@@ -45,7 +45,7 @@ def run(stage):
   for f in metafields:
    if f['key'] in state['metafields']:continue
    d={k:v for k,v in f.items() if k!='required'};d.update({'namespace':'ost','ownerType':'PRODUCT','access':{'storefront':'PUBLIC_READ'}})
-   if f['key'] in ['line','sale_mode']:d['validations']=[{'name':'choices','value':json.dumps(['ostmann','ostfrau','unisex'] if f['key']=='line' else ['waitlist','preorder','live'])}]
+   if f['key'] in ['line','sale_mode']:d['validations']=[{'name':'choices','value':json.dumps(['ostmann','ostfrau','unisex'] if f['key']=='line' else ['waitlist','preorder','live','sold_out','archived'])}]
    state['metafields'][f['key']]=execute('metafieldDefinitionCreate',{'definition':d})['createdDefinition'];save();print('Metafield',f['key'],flush=True)
   if 'archive_link' not in state['metafields']:
    d={'name':'Archive Link','namespace':'ost','key':'archive_link','ownerType':'PRODUCT','type':'metaobject_reference','access':{'storefront':'PUBLIC_READ'},'validations':[{'name':'metaobject_definition_id','value':state['definitions']['ost_archive_person']['id']}]}

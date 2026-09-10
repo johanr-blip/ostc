@@ -1,6 +1,6 @@
 # Preise und Wirtschaftlichkeit
 
-Stand: 10.09.2026. Die Datei `OST-Kalkulation.xlsx` ist eine Szenariorechnung, keine finale Finanzplanung. Keine Bestellung oder Ausgabe wurde daraus ausgelöst.
+Stand: 10.09.2026. `content/product-master.json` ist die aktuelle zentrale Produkt- und Kalkulationsquelle. Die Datei `OST-Kalkulation.xlsx` bleibt als historische Szenariorechnung erhalten. Keine Bestellung oder Ausgabe wurde daraus ausgelöst.
 
 ## Aktuell recherchierte Ausgangswerte
 

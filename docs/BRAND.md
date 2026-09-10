@@ -4,7 +4,7 @@
 
 OST ist eine Kulturmarke aus ostdeutscher Perspektive. Kleidung macht Herkunft sichtbar; Menschen, Orte und Geschichten geben ihr Tiefe. Der erste Eindruck ist hochwertige europäische Streetwear. Die Herkunft wird im zweiten Blick erkennbar.
 
-Leitidee: **VOM OSTEN. NACH VORN.**
+Leitidee: **OST. — VON HIER.**
 
 Zielgruppe: Menschen mit ostdeutscher Biografie, Familiengeschichte oder emotionalem Bezug, unabhängig vom heutigen Wohnort. Die Marke spricht mehrere Generationen an.
 
@@ -30,6 +30,8 @@ Headline-Laufweite darf enger sein; Wortmarken auf Kleidungsstücken erhalten ko
 Klar, ruhig, konkret. Sätze mit Haltung, keine großen Versprechen ohne Beleg. „Bio“, Grammaturen, Produktion in Deutschland oder Lieferzeiten erst veröffentlichen, wenn das reale Produkt sie trägt. Keine erfundenen Aussagen über Gründerbiografie oder Kunden.
 
 Beispiel: „Eine Stadt. Eine Familie. Die Sprache am Küchentisch. Herkunft hat viele Formen.“
+
+Die frühere Formulierung „VOM OSTEN. NACH VORN.“ wird nicht mehr verwendet. Claims bleiben sparsam, ruhig und unpolitisch.
 
 ## Drop 001 Gestaltung
 

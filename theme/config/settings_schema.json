@@ -47,7 +47,7 @@
         "type": "text",
         "id": "tagline",
         "label": "Leitidee",
-        "default": "VOM OSTEN. NACH VORN."
+        "default": "OST. — VON HIER."
       },
       {
         "type": "text",
@@ -59,6 +59,12 @@
         "type": "text",
         "id": "contact_email",
         "label": "Öffentliche Kontakt-E-Mail"
+      },
+      {
+        "type": "text",
+        "id": "store_domain",
+        "label": "Shop-Domain",
+        "default": "ostolz.de"
       }
     ]
   },

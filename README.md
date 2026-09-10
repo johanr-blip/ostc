@@ -1,8 +1,8 @@
-# OST. — VOM OSTEN. NACH VORN.
+# OST. — VON HIER.
 
 Gemeinsame, modellunabhängige Projektbasis für die Modemarke OST und ihr Shopify-Theme. Dieses Repository enthält den vollständigen Entwicklungsstand einschließlich Bildern, Inhalten, Datenmodellen und Übergabe. Kein Codex-, Claude- oder Gemini-Abonnement ist zum lokalen Start erforderlich.
 
-**Status: Entwicklungsstand, kein verkaufsfertiger Launch.** Im verbundenen Shopify-Shop liegt das Theme unveröffentlicht vor. Produkte und neue Seiten sind Entwürfe. Warteliste und Kaufbuttons sind bewusst deaktiviert, solange Betreiberangaben, Rechtstexte und Produktion offen sind. Siehe [aktuellen Status](docs/STATUS.md).
+**Status: Entwicklungsstand, kein verkaufsfertiger Launch.** Das bisherige OST-Theme ist im verbundenen Shopify-Shop live, Verkauf und Newsletter bleiben jedoch im Theme gesperrt. Die weitere Entwicklung erfolgt auf einer getrennten, unveröffentlichten Prüfversion. Produkte und neue Seiten sind Entwürfe. Siehe [aktuellen Status](docs/STATUS.md).
 
 ## Für einen neuen Agenten
 
@@ -32,26 +32,27 @@ Vorschau: `http://localhost:4173`. Sie verwendet die tatsächlichen Liquid-Secti
 ## Shopify
 
 - Shop: `ajfwfu-ih.myshopify.com`
-- OST Theme: `205871546705`, **unpublished**
-- [Theme-Editor](https://ajfwfu-ih.myshopify.com/admin/themes/205871546705/editor)
-- [Shopify-Theme-Vorschau](https://ajfwfu-ih.myshopify.com?preview_theme_id=205871546705)
-- Bestehendes Live-Theme: Horizon, `205868663121`
+- Prüf-Theme: `205894418769`, **unpublished**
+- [Theme-Editor](https://ajfwfu-ih.myshopify.com/admin/themes/205894418769/editor)
+- [Shopify-Theme-Vorschau](https://ajfwfu-ih.myshopify.com?preview_theme_id=205894418769)
+- Live-Theme: `205871546705`, **OST — Founding Drop 001**
+- Horizon: `205868663121`, **unpublished am 10.09.2026**
 
 Authentifizierung erfolgt je Rechner und Benutzer. Eine Plugin-Verbindung oder Chat-Authentifizierung ist nicht automatisch auf andere Modelle/Rechner übertragbar. Niemals Tokens aus einer bestehenden Sitzung exportieren.
 
 ```sh
 npm run shopify -- theme list --store ajfwfu-ih.myshopify.com --json
-npm run shopify -- theme dev --store ajfwfu-ih.myshopify.com --theme 205871546705 --path theme
+npm run shopify -- theme dev --store ajfwfu-ih.myshopify.com --theme 205894418769 --path theme
 ```
 
-Für Admin-Datenzugriff und sichere Übertragung siehe [SHOPIFY.md](docs/SHOPIFY.md). `npm run theme:push` aktualisiert ausschließlich das festgelegte unveröffentlichte OST-Theme und prüft dessen Rolle zuvor. Der Befehl veröffentlicht das Theme nicht.
+Für Admin-Datenzugriff und sichere Übertragung siehe [SHOPIFY.md](docs/SHOPIFY.md). Der vollständige Muster-, Newsletter-, Preorder-, Zahlungs- und Veröffentlichungsablauf steht in [OPERATIONS.md](docs/OPERATIONS.md). `npm run theme:push` aktualisiert ausschließlich das festgelegte unveröffentlichte OST-Theme und prüft dessen Rolle zuvor. Der Befehl veröffentlicht das Theme nicht.
 
 ## Dateien
 
 | Pfad | Inhalt |
 |---|---|
 | `theme/` | Shopify Online Store 2.0: Liquid, Sections, JSON-Templates, CSS, Vanilla JS |
-| `content/` | Produkte, Seiten, Metafields und Metaobject-Definitionen |
+| `content/` | Zentraler Produkt-Master, Produkttexte, Seiten, Metafields und Metaobject-Definitionen |
 | `assets/` | Ursprüngliche KI-Konzeptbilder, Prompt-Nachweise und Schriftlizenz |
 | `theme/assets/` | Optimierte WebP-Bilder und lokal geladene Schrift |
 | `tools/` | Vorschau, Prüfungen, Upload und Admin-Datenwerkzeuge |

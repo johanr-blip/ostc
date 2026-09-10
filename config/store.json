@@ -1,12 +1,14 @@
 {
   "store": "ajfwfu-ih.myshopify.com",
-  "theme_id": "205871546705",
-  "theme_name": "OST — Founding Drop 001",
+  "theme_id": "205894418769",
+  "theme_name": "OST — ostolz.de Prüfstand 2026-09-10",
   "theme_role": "unpublished",
-  "original_live_theme_id": "205868663121",
-  "original_live_theme_name": "Horizon",
+  "live_theme_id": "205871546705",
+  "live_theme_name": "OST — Founding Drop 001",
+  "previous_theme_id": "205868663121",
+  "previous_theme_name": "Horizon",
   "api_version": "2026-07",
   "checked_at": "2026-09-10",
-  "editor_url": "https://ajfwfu-ih.myshopify.com/admin/themes/205871546705/editor",
-  "preview_url": "https://ajfwfu-ih.myshopify.com?preview_theme_id=205871546705"
+  "editor_url": "https://ajfwfu-ih.myshopify.com/admin/themes/205894418769/editor",
+  "preview_url": "https://ajfwfu-ih.myshopify.com?preview_theme_id=205894418769"
 }

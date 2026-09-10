@@ -1,16 +1,20 @@
 {% doc %}
 @param {section} section - Parent section for unique form IDs.
+@param {product} [product] - Optional product whose availability is requested.
 {% enddoc %}
 {% if settings.newsletter_ready %}
  {% assign form_id = 'Newsletter-' | append: section.id %}
+ {% assign newsletter_tags = 'newsletter,ost-drop-001' %}
+ {% if product != blank %}{% assign product_tag = product.handle | prepend: ',interest-' %}{% assign newsletter_tags = newsletter_tags | append: product_tag %}{% endif %}
  {% form 'customer', id: form_id, class: 'newsletter-form', data-newsletter-form: '' %}
-  <input type="hidden" name="contact[tags]" value="newsletter,ost-drop-001" data-newsletter-tags>
+  <input type="hidden" name="contact[tags]" value="{{ newsletter_tags | escape }}" data-newsletter-tags data-base-tags="{{ newsletter_tags | escape }}">
+  {% if product != blank %}<input type="hidden" name="contact[Produktinteresse]" value="{{ product.title | escape }} / {{ product.handle | escape }}">{% endif %}
   {% if form.posted_successfully? %}<p class="form-status" role="status">{{ 'newsletter.success' | t }}</p>{% else %}
   {% if form.errors %}<div class="form-error" role="alert">{{ form.errors | default_errors }}</div>{% endif %}
   <label for="Email-{{ section.id }}">{{ 'newsletter.email' | t }}</label><div class="email-row"><input id="Email-{{ section.id }}" name="contact[email]" type="email" required autocomplete="email" autocapitalize="off" spellcheck="false" {% if form.errors %}aria-invalid="true"{% endif %}><button class="button" type="submit">{{ 'newsletter.submit' | t }} <span aria-hidden="true">↗</span></button></div>
   <label for="Line-{{ section.id }}">Deine Markenwelt (optional)</label><select id="Line-{{ section.id }}" name="contact[note][Markenwelt]" data-line-preference><option value="beide">Beide</option><option value="ostmann">{{ settings.line_a_name | escape }}</option><option value="ostfrau">{{ settings.line_b_name | escape }}</option></select>
   <label class="consent"><input type="checkbox" required name="contact[note][Newsletter-Einwilligung]" value="OST Newsletter Drop 001, Einwilligung Version 2026-09-10"><span>Ich möchte E-Mails von {{ settings.brand_name | escape }} zum Drop und zur Marke erhalten. Ich kann mich jederzeit abmelden. Informationen zur Verarbeitung in der <a href="{{ settings.privacy_page.url | default: '/pages/datenschutz' }}">Datenschutzerklärung</a>.</span></label>
-  <p class="note">Nach dem Absenden bitte den Bestätigungslink in deiner E-Mail anklicken. Deine Anmeldung ist keine Bestellung.</p>
+  <p class="note">Nach dem Absenden bitte den Bestätigungslink in deiner E-Mail anklicken. Die Eintragung ist unverbindlich und keine Bestellung.</p>
   {% endif %}
  {% endform %}
 {% else %}<div class="newsletter-form"><p>{{ 'newsletter.unavailable' | t }}</p><p class="note">Unverbindlich vormerken. Zum Start per E-Mail erfahren, wann der erste Drop öffnet.</p></div>{% endif %}

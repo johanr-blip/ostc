@@ -6,7 +6,7 @@
       form.dataset.ready = 'true';
       const preference = form.querySelector('[data-line-preference]');
       const tags = form.querySelector('[data-newsletter-tags]');
-      const sync = () => { if (tags && preference) tags.value = 'newsletter,ost-drop-001,line-' + preference.value; };
+      const sync = () => { if (tags && preference) tags.value = tags.dataset.baseTags + ',line-' + preference.value; };
       preference?.addEventListener('change', sync);
       sync();
     });

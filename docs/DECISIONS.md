@@ -6,6 +6,9 @@ Stand: 10.09.2026.
 |---|---|
 | Shopify Custom Theme, Liquid + Vanilla JS | Verbindlicher Nutzerbrief |
 | Dachmarke OST., Welten OSTMANN und OSTFRAU | Nutzerbrief; Namen zentral konfiguriert, Rechtsprüfung offen |
+| Leitidee OST. — VON HIER. | Aktualisierte Übergabe vom 10.09.2026; frühere kämpferischere Formulierung entfällt |
+| Hauptfulfillment Shirtigo Cockpit, Textilbasis bevorzugt Stanley/Stella | Aktualisierte Übergabe; endgültige Zuordnung erst nach Kontoabgleich und Mustern |
+| Primäre Domain ostolz.de | Domain zeigt am 10.09.2026 auf Shopify |
 | Zunächst Waitlist | Nutzerbrief; keine Zahlung ohne validierten Drop |
 | Kleidung schwarz, Branding weiß, kalte Editorial-Gestaltung | Nutzerbrief |
 | Echte Collection-Links als Switch | Ohne JS bedienbar und indexierbar; View Transitions als optionale dezente Animation |
@@ -23,4 +26,4 @@ Stand: 10.09.2026.
 | Domainentscheidung nach Markenprüfung | Nutzerantwort vom 10.09.2026 |
 | Gemeinsames Repository johanr-blip/ostc | Nutzerauftrag für Zusammenarbeit mit anderen KI-Modellen |
 
-Nicht entschieden: Lieferant, Endprodukte, reale Größenkurven, Stoffzusammensetzungen, endgültige Preise/Versandtarife, Preorder-App, Rechtstexte, Markenanmeldung, Domain und bezahlte Kampagnen. 1.500 EUR und 300–600 EUR sind Planwerte aus dem Brief, keine Bestellfreigabe.
+Nicht entschieden: finale Supplier-Varianten, reale Größenkurven, Stoffzusammensetzungen, bestätigte EKs/Versandtarife, Preorder-App, Rechtstexte, Markenanmeldung und bezahlte Kampagnen. 1.500 EUR und 300–600 EUR sind Planwerte aus dem Brief, keine Bestellfreigabe.

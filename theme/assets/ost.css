@@ -12,3 +12,4 @@
 @view-transition{navigation:auto}::view-transition-old(root),::view-transition-new(root){animation-duration:300ms}@media(prefers-reduced-motion:reduce){::view-transition-old(root),::view-transition-new(root){animation:none}}
 
 @media(max-width:600px){.hero-bottom>.meta{display:none}.hero-bottom .hero-line{font-size:20px}.hero-bottom p{max-width:155px}}
+.footer-domain{display:inline-block;margin-top:22px;font-size:14px;letter-spacing:.08em;text-transform:uppercase}.product-state{padding:24px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}

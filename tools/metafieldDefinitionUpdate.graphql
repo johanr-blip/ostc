@@ -1,0 +1,12 @@
+mutation OSTMetafieldDefinitionUpdate($definition: MetafieldDefinitionUpdateInput!) {
+  metafieldDefinitionUpdate(definition: $definition) {
+    updatedDefinition {
+      id
+      key
+    }
+    userErrors {
+      field
+      message
+    }
+  }
+}

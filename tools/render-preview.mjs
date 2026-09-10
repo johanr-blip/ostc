@@ -18,7 +18,13 @@ engine.registerTag('doc',{parse(tag,tokens){const stream=this.liquid.parser.pars
 engine.registerTag('schema',{parse(tag,tokens){const stream=this.liquid.parser.parseStream(tokens).on('tag:endschema',()=>stream.stop()).on('template',()=>{});stream.start();},render(){return '';}});
 engine.registerTag('paginate',{parse(tag,tokens){this.templates=[];const stream=this.liquid.parser.parseStream(tokens).on('tag:endpaginate',()=>stream.stop()).on('template',t=>this.templates.push(t));stream.start();},*render(ctx,emitter){ctx.push({paginate:{pages:1}});yield this.liquid.renderer.renderTemplates(this.templates,ctx,emitter);ctx.pop();}});
 engine.registerTag('form',{parse(tag,tokens){this.args=tag.args;this.templates=[];const stream=this.liquid.parser.parseStream(tokens).on('tag:endform',()=>stream.stop()).on('template',t=>this.templates.push(t));stream.start();},*render(ctx,emitter){ctx.push({form:{}});emitter.write('<form class="newsletter-form" data-preview-form>');yield this.liquid.renderer.renderTemplates(this.templates,ctx,emitter);emitter.write('</form>');ctx.pop();}});
-const productData=JSON.parse(await fs.readFile('content/products.json','utf8'));
+const productCopy=JSON.parse(await fs.readFile('content/products.json','utf8'));
+const productMaster=JSON.parse(await fs.readFile('content/product-master.json','utf8'));
+const productData=productCopy.map(product=>{
+ const master=productMaster.products.find(item=>item.handle===product.handle);
+ if(!master)throw new Error(`Missing master product ${product.handle}`);
+ return {...product,price:Math.round(master.retail_price_gross*100),sizes:master.variants.map(variant=>variant.size)};
+});
 const pages=JSON.parse(await fs.readFile('content/pages.json','utf8'));
 const settings=JSON.parse(await fs.readFile(theme+'/config/settings_data.json','utf8')).current;
 const products=productData.map((p,i)=>{
@@ -54,7 +60,7 @@ async function renderRoute(url,templateName,extra={}){
 await fs.mkdir(output+'/assets',{recursive:true});
 await fs.cp(theme+'/assets',output+'/assets',{recursive:true});
 await fs.writeFile(output+'/assets/preview.js',`document.querySelectorAll('[data-preview-form]').forEach(f=>f.addEventListener('submit',e=>{e.preventDefault();alert('Private Konzeptvorschau. Es werden keine Daten übermittelt.');}));document.querySelectorAll('.collection-toolbar form').forEach(f=>f.addEventListener('submit',e=>{e.preventDefault();const g=document.querySelector('.product-grid');const cards=[...g.children];const direction=f.elements.sort_by.value==='price-descending'?-1:1;cards.sort((a,b)=>direction*(Number(a.querySelector('.price').textContent.replace(/[^0-9,]/g,'').replace(',','.'))-Number(b.querySelector('.price').textContent.replace(/[^0-9,]/g,'').replace(',','.'))));cards.forEach(c=>g.append(c));}));`);
-await renderRoute('/','index',{page_title:'VOM OSTEN. NACH VORN.'});
+await renderRoute('/','index',{page_title:'OST. — VON HIER.'});
 for(const [name,collection] of Object.entries(collections))await renderRoute(collection.url,name==='all'?'collection':'collection.'+name,{collection,template:{name:'collection',suffix:name==='all'?'':name},page_title:collection.title});
 for(const p of products)await renderRoute(p.url,'product',{product:p,page_title:p.title,template:{name:'product',suffix:''}});
 for(const p of pages)await renderRoute('/pages/'+p.handle,'page'+(p.templateSuffix?'.'+p.templateSuffix:''),{page:{...p,content:p.body},page_title:p.title,template:{name:'page',suffix:p.templateSuffix}});

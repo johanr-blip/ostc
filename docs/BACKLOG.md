@@ -2,10 +2,11 @@
 
 ## Direkt weiterbearbeitbar
 
+- [ ] Shopify-CLI mit den dokumentierten Produkt-/Content-Scopes autorisieren, sicheren Draft/Unpublished-Abgleich ausführen und die Ausgabe archivieren: `node tools/update-existing-store.mjs --apply`.
 - [ ] Vollständige echte Shopify-Preview mit Store-Daten testen. Draft-Produkte/Seiten sind nicht allgemein storefront-sichtbar. Sichtbarkeit nur bewusst im geschützten Shop ändern; Bestands- und Verkaufssperren beibehalten.
 - [ ] Produktmedien im Shopify-Katalog zuweisen. Lokale Konzeptbilder liegen vollständig vor; Entwurfsprodukte haben noch keine Medienzuordnung.
 - [ ] Katalog- und Musterabgleich: Hoodie-/Cap-Mockups zeigen teilweise OST. statt Linienwortmarke. Vor finalen Produktfotos/Produktion exakt festlegen und angleichen.
-- [ ] Übrige Produktideen (Bucket Hat, Taschen, Archivposter) nach Kernproduktvalidierung konkret ausarbeiten. Keine erfundenen Personendesigns.
+- [ ] Zehn im Produkt-Master als Planung geführte Erweiterungen erst nach Kernproduktvalidierung konkret ausarbeiten und danach bei Bedarf in Shopify anlegen.
 - [ ] Echte Shopify-Live-Modus-Tests auf isolierten Testprodukten: verfügbare/ausverkaufte Variante, Mengen, Cart-Änderung, Rabatte und Checkout-Übergang.
 - [ ] Theme-Editor-Tests aller Sections und zentralen Namens-/Collection-Einstellungen.
 - [ ] Native Newsletter- und Kontaktformularfehler in Shopify testen, sobald Testadresse und Absender freigegeben sind.
@@ -25,7 +26,7 @@
 - [ ] Juristisch geprüfte Rechtstexte und tatsächlich benötigte Verbraucherfunktionen zum Startdatum.
 - [ ] DSGVO/Consent-Konfiguration, Double Opt-in und Versandprobe.
 - [ ] Zahlungsanbieter, Versand, Retouren und Erstattung testen.
-- [ ] Preorder-App auswählen und bezahlen/freigeben, falls Phase 2 tatsächlich startet.
+- [ ] Shopify-kompatible Purchase-Option-/Preorder-App auswählen und bezahlen/freigeben, wenn die Supply Chain abgenommen ist.
 - [ ] Archiv-/Interviewrechte sowie reale Inhalte einholen.
 
 ## Freigabe für den Wartelisten-Launch

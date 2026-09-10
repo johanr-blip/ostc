@@ -8,7 +8,8 @@ This is the canonical handoff document for all coding agents. It is intentionall
 2. `docs/BACKLOG.md`: concrete next tasks and acceptance criteria.
 3. `docs/DECISIONS.md`: accepted scope and constraints.
 4. `docs/ARCHITECTURE.md`: implementation and data ownership.
-5. `docs/PROJECT_BRIEF.md`: the user's complete source brief.
+5. `docs/OPERATIONS.md`: supplier, sample, newsletter, preorder, payment and publication gates.
+6. `docs/PROJECT_BRIEF.md`: the user's complete source brief.
 
 Customer-facing copy is German. Preserve the user's typography and names unless explicitly changed. OST is a culture brand, with no party politics, dictatorship glorification, exclusion or DDR novelty imagery. OSTMANN and OSTFRAU are equal brand worlds, not a hierarchy.
 
@@ -16,6 +17,7 @@ Customer-facing copy is German. Preserve the user's typography and names unless 
 
 - Shopify Online Store 2.0 custom Liquid theme. Keep CSS and JavaScript small; do not add React/headless/WordPress or a custom checkout.
 - Edit `theme/` and `content/`, then regenerate `preview/dist/`; generated HTML is not the source of truth.
+- Treat `content/product-master.json` as the source of truth for product status, variants, Shopify/supplier IDs, prices and cost inputs. Never infer missing costs or supplier mappings.
 - `npm ci`, `npm run check`, `npm run preview:build`, `npm run test:preview` are the portable baseline.
 - Run targeted real Shopify/browser checks for changes involving Liquid resource behavior, forms, carts, theme editor or apps. Local LiquidJS previews are not proof of Shopify runtime correctness.
 - Keep the 360–430px mobile layout usable. Test keyboard focus, native links without JavaScript, reduced motion and image loading.
@@ -24,7 +26,7 @@ Customer-facing copy is German. Preserve the user's typography and names unless 
 
 ## Shop state and access
 
-The shop is `ajfwfu-ih.myshopify.com`. The OST theme is `205871546705`, unpublished. Existing Horizon live theme is `205868663121`. Treat `config/store.json` as a snapshot; verify roles before any upload.
+The shop is `ajfwfu-ih.myshopify.com`. The development target is theme `205894418769`, unpublished. The current live theme is `205871546705`. Horizon `205868663121` is unpublished. Treat `config/store.json` as a snapshot; verify roles before any upload.
 
 - Do not edit/publish the live theme without explicit user authorization and a tested preview.
 - `npm run theme:push` is the intended guarded uploader; it refuses a live or missing target.

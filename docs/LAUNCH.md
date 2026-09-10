@@ -43,7 +43,7 @@ Keine Accounts oder Anzeigen wurden angelegt; keine Nachrichten versendet. Verö
 
 ## Drei konkrete Anzeigenentwürfe
 
-**Herkunft:** „Du kannst wegziehen. Deine Herkunft kommt mit. OST. VOM OSTEN. NACH VORN.“ Bild: reales Tee im Alltag. CTA nach Start: „Drop 001 vormerken“.
+**Herkunft:** „Du kannst wegziehen. Deine Herkunft kommt mit. OST. — VON HIER.“ Bild: reales Tee im Alltag. CTA nach Start: „Drop 001 vormerken“.
 
 **Produkt:** „Schwarz. Weiß. Ein klarer Anfang. Entdecke den ersten Drop von OST.“ Bild: reales Front-/Detailfoto; keine unbelegten Qualitätsclaims.
 

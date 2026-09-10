@@ -4,13 +4,13 @@
 
 Alle nicht geheimen IDs stehen in `config/store.json` und `config/shopify-resources.json`. Vor Änderungen remote verifizieren. Keine neue Umgebung erzeugen, nur weil ein anderer Agent startet.
 
-Der Shop zeigte beim Abruf am 10.09.2026 die Passwortseite. Der bestehende Shop-Name ist „Mein Shop“. Horizon bleibt live. OST liegt als unveröffentlichtes Theme vor. Die neu erstellten Produkte und Seiten sind DRAFT/unpublished. Die bestehende Standardseite `contact` wurde nicht geändert.
+Die Domain `ostolz.de` zeigt am 10.09.2026 auf Shopify. Das bisherige OST-Theme `205871546705` ist live. Die Weiterentwicklung läuft ausschließlich auf dem unveröffentlichten Prüf-Theme `205894418769`. Die Produkte und Seiten bleiben DRAFT/unpublished. Die bestehende Standardseite `contact` wurde nicht geändert.
 
 ## Theme-Zugriff
 
 ```sh
 npm run shopify -- theme list --store ajfwfu-ih.myshopify.com --json
-npm run shopify -- theme dev --store ajfwfu-ih.myshopify.com --theme 205871546705 --path theme
+npm run shopify -- theme dev --store ajfwfu-ih.myshopify.com --theme 205894418769 --path theme
 ```
 
 Der erste Aufruf kann einen Browser-Login auslösen. Der Kontoinhaber bestätigt selbst. Keine Passwörter oder Tokens in Chat/Git einfügen.
@@ -26,7 +26,7 @@ Dieses Skript prüft die Remote-Rolle. Keine Verwendung von `--allow-live`, `--p
 ## Admin-Datenzugriff
 
 ```sh
-npm run shopify -- store auth --store ajfwfu-ih.myshopify.com --scopes write_products,write_content,write_metaobject_definitions,write_metaobjects
+npm run shopify -- store auth --store ajfwfu-ih.myshopify.com --scopes write_products,read_products,write_content,read_content,write_online_store_pages,read_online_store_pages
 npm run shopify -- store execute --store ajfwfu-ih.myshopify.com --query-file tools/inspect.graphql --json
 npm run shopify -- store execute --store ajfwfu-ih.myshopify.com --query-file tools/read.graphql --json
 ```
@@ -36,6 +36,14 @@ Für reine Leseaufgaben die entsprechenden read-Scopes verwenden. Weitere Scopes
 `tools/store-setup.py` enthält die dokumentierten Erstellungsoperationen und kann den aktuellen Stand lesen. Default ist read-only. Schreibstufen erfordern `--apply` und verwenden die bekannte Ressourcen-Zuordnung. Die Erstinitialisierung ist bereits erledigt. Nicht ungeprüft erneut ausführen. Das Skript erstellt keine bezahlten Dienste und veröffentlicht keine Produkte.
 
 Alle GraphQL-Operationen liegen auch als einzelne Dateien vor. Sie wurden gegen das Shopify Admin Schema 2026-07 geprüft. Bei Änderungen aktuelle offizielle Dokumentation heranziehen und die Operation vor Ausführung validieren.
+
+Für die in diesem Stand vorbereiteten Beschreibungs-, Preis-, Seiten- und `sale_mode`-Updates zuerst den Umfang ohne Schreibzugriff prüfen:
+
+```sh
+node tools/update-existing-store.mjs
+```
+
+Nach erfolgreicher Autorisierung bewusst mit `--apply` ausführen. Das Skript bricht ab, sobald ein bekanntes Produkt nicht mehr DRAFT oder eine Zielseite bereits veröffentlicht ist; es veröffentlicht nichts und aktiviert keinen Checkout.
 
 ## Warteliste aktivieren
 
