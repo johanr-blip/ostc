@@ -1,0 +1,396 @@
+[
+  {
+    "name": "OST ARCHIVE PERSON",
+    "type": "ost_archive_person",
+    "displayNameKey": "name",
+    "access": {
+      "storefront": "PUBLIC_READ"
+    },
+    "capabilities": {
+      "publishable": {
+        "enabled": true
+      },
+      "renderable": {
+        "enabled": true,
+        "data": {
+          "metaTitleKey": "seo_title",
+          "metaDescriptionKey": "seo_description"
+        }
+      },
+      "onlineStore": {
+        "enabled": true,
+        "data": {
+          "urlHandle": "ost-archive-person"
+        }
+      }
+    },
+    "fieldDefinitions": [
+      {
+        "key": "name",
+        "name": "Name",
+        "type": "single_line_text_field",
+        "required": true
+      },
+      {
+        "key": "slug",
+        "name": "Slug",
+        "type": "single_line_text_field",
+        "required": false
+      },
+      {
+        "key": "published",
+        "name": "Published",
+        "type": "boolean",
+        "required": false
+      },
+      {
+        "key": "seo_title",
+        "name": "Seo Title",
+        "type": "single_line_text_field",
+        "required": false
+      },
+      {
+        "key": "seo_description",
+        "name": "Seo Description",
+        "type": "multi_line_text_field",
+        "required": false
+      },
+      {
+        "key": "archive_number",
+        "name": "Archive Number",
+        "type": "single_line_text_field",
+        "required": false
+      },
+      {
+        "key": "birth_year",
+        "name": "Birth Year",
+        "type": "number_integer",
+        "required": false
+      },
+      {
+        "key": "death_year",
+        "name": "Death Year",
+        "type": "number_integer",
+        "required": false
+      },
+      {
+        "key": "years_display",
+        "name": "Years Display",
+        "type": "single_line_text_field",
+        "required": false
+      },
+      {
+        "key": "place",
+        "name": "Place",
+        "type": "single_line_text_field",
+        "required": false
+      },
+      {
+        "key": "kicker",
+        "name": "Kicker",
+        "type": "single_line_text_field",
+        "required": false
+      },
+      {
+        "key": "portrait",
+        "name": "Portrait",
+        "type": "file_reference",
+        "required": false
+      },
+      {
+        "key": "short_bio",
+        "name": "Short Bio",
+        "type": "multi_line_text_field",
+        "required": false
+      },
+      {
+        "key": "long_bio",
+        "name": "Long Bio",
+        "type": "rich_text_field",
+        "required": false
+      },
+      {
+        "key": "quote",
+        "name": "Quote",
+        "type": "multi_line_text_field",
+        "required": false
+      },
+      {
+        "key": "category",
+        "name": "Category",
+        "type": "single_line_text_field",
+        "required": false
+      },
+      {
+        "key": "linked_product",
+        "name": "Linked Product",
+        "type": "product_reference",
+        "required": false
+      }
+    ]
+  },
+  {
+    "name": "OST VOICE",
+    "type": "ost_voice",
+    "displayNameKey": "name",
+    "access": {
+      "storefront": "PUBLIC_READ"
+    },
+    "capabilities": {
+      "publishable": {
+        "enabled": true
+      },
+      "renderable": {
+        "enabled": true,
+        "data": {
+          "metaTitleKey": "seo_title",
+          "metaDescriptionKey": "seo_description"
+        }
+      },
+      "onlineStore": {
+        "enabled": true,
+        "data": {
+          "urlHandle": "ost-voice"
+        }
+      }
+    },
+    "fieldDefinitions": [
+      {
+        "key": "name",
+        "name": "Name",
+        "type": "single_line_text_field",
+        "required": true
+      },
+      {
+        "key": "slug",
+        "name": "Slug",
+        "type": "single_line_text_field",
+        "required": false
+      },
+      {
+        "key": "published",
+        "name": "Published",
+        "type": "boolean",
+        "required": false
+      },
+      {
+        "key": "seo_title",
+        "name": "Seo Title",
+        "type": "single_line_text_field",
+        "required": false
+      },
+      {
+        "key": "seo_description",
+        "name": "Seo Description",
+        "type": "multi_line_text_field",
+        "required": false
+      },
+      {
+        "key": "age",
+        "name": "Age",
+        "type": "number_integer",
+        "required": false
+      },
+      {
+        "key": "birthplace",
+        "name": "Birthplace",
+        "type": "single_line_text_field",
+        "required": false
+      },
+      {
+        "key": "current_place",
+        "name": "Current Place",
+        "type": "single_line_text_field",
+        "required": false
+      },
+      {
+        "key": "portrait",
+        "name": "Portrait",
+        "type": "file_reference",
+        "required": false
+      },
+      {
+        "key": "kicker",
+        "name": "Kicker",
+        "type": "single_line_text_field",
+        "required": false
+      },
+      {
+        "key": "story",
+        "name": "Story",
+        "type": "rich_text_field",
+        "required": false
+      },
+      {
+        "key": "statement",
+        "name": "Statement",
+        "type": "multi_line_text_field",
+        "required": false
+      }
+    ]
+  },
+  {
+    "name": "OST PLACE",
+    "type": "ost_place",
+    "displayNameKey": "name",
+    "access": {
+      "storefront": "PUBLIC_READ"
+    },
+    "capabilities": {
+      "publishable": {
+        "enabled": true
+      },
+      "renderable": {
+        "enabled": true,
+        "data": {
+          "metaTitleKey": "seo_title",
+          "metaDescriptionKey": "seo_description"
+        }
+      },
+      "onlineStore": {
+        "enabled": true,
+        "data": {
+          "urlHandle": "ost-place"
+        }
+      }
+    },
+    "fieldDefinitions": [
+      {
+        "key": "name",
+        "name": "Name",
+        "type": "single_line_text_field",
+        "required": true
+      },
+      {
+        "key": "slug",
+        "name": "Slug",
+        "type": "single_line_text_field",
+        "required": false
+      },
+      {
+        "key": "published",
+        "name": "Published",
+        "type": "boolean",
+        "required": false
+      },
+      {
+        "key": "seo_title",
+        "name": "Seo Title",
+        "type": "single_line_text_field",
+        "required": false
+      },
+      {
+        "key": "seo_description",
+        "name": "Seo Description",
+        "type": "multi_line_text_field",
+        "required": false
+      },
+      {
+        "key": "region",
+        "name": "Region",
+        "type": "single_line_text_field",
+        "required": false
+      },
+      {
+        "key": "coordinates",
+        "name": "Coordinates",
+        "type": "single_line_text_field",
+        "required": false
+      },
+      {
+        "key": "portrait",
+        "name": "Portrait",
+        "type": "file_reference",
+        "required": false
+      },
+      {
+        "key": "kicker",
+        "name": "Kicker",
+        "type": "single_line_text_field",
+        "required": false
+      },
+      {
+        "key": "story",
+        "name": "Story",
+        "type": "rich_text_field",
+        "required": false
+      }
+    ]
+  },
+  {
+    "name": "OST Rechteakte INTERN",
+    "type": "ost_rights_record",
+    "displayNameKey": "name",
+    "access": {
+      "storefront": "NONE"
+    },
+    "fieldDefinitions": [
+      {
+        "key": "name",
+        "name": "Name",
+        "type": "single_line_text_field",
+        "required": true
+      },
+      {
+        "key": "subject_gid",
+        "name": "Subject Gid",
+        "type": "single_line_text_field",
+        "required": false
+      },
+      {
+        "key": "rights_status",
+        "name": "Rights Status",
+        "type": "single_line_text_field",
+        "required": false
+      },
+      {
+        "key": "rights_notes",
+        "name": "Rights Notes",
+        "type": "multi_line_text_field",
+        "required": false
+      },
+      {
+        "key": "rights_holder",
+        "name": "Rights Holder",
+        "type": "single_line_text_field",
+        "required": false
+      },
+      {
+        "key": "license_reference",
+        "name": "License Reference",
+        "type": "single_line_text_field",
+        "required": false
+      },
+      {
+        "key": "allowed_products",
+        "name": "Allowed Products",
+        "type": "multi_line_text_field",
+        "required": false
+      },
+      {
+        "key": "territories",
+        "name": "Territories",
+        "type": "single_line_text_field",
+        "required": false
+      },
+      {
+        "key": "expires_at",
+        "name": "Expires At",
+        "type": "date",
+        "required": false
+      },
+      {
+        "key": "consent_reference",
+        "name": "Consent Reference",
+        "type": "single_line_text_field",
+        "required": false
+      },
+      {
+        "key": "reviewed_at",
+        "name": "Reviewed At",
+        "type": "date",
+        "required": false
+      }
+    ]
+  }
+]

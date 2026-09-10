@@ -1,0 +1,1 @@
+mutation OSTProduct($input: ProductSetInput!) { productSet(input:$input,synchronous:true) { product { id handle variants(first:20) { nodes { id title } } } userErrors { field message } } }

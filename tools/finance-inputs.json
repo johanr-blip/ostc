@@ -1,0 +1,21 @@
+{
+  "as_of": "2026-09-10",
+  "currency": "EUR",
+  "vat": 0.19,
+  "payment_rate": 0.02,
+  "payment_fixed": 0.30,
+  "reserve_rate": 0.08,
+  "customer_shipping_gross": 4.90,
+  "cac": 10,
+  "initial_cost": 1500,
+  "products": [
+    {"name":"Heavy Tee","retail_gross":39.90,"pod_gross":18.74,"shipping_net":4.20,"branding_net":0.50},
+    {"name":"Heavy Hoodie","retail_gross":74.90,"pod_net":27.88,"shipping_net":4.80,"branding_net":0.50},
+    {"name":"Cap","retail_gross":32.90,"pod_net":null,"shipping_net":4.20,"branding_net":0.50},
+    {"name":"Bucket Hat","retail_gross":29.90,"pod_net":null,"shipping_net":4.20,"branding_net":0.50},
+    {"name":"Gymbag","retail_gross":22.90,"pod_net":null,"shipping_net":4.20,"branding_net":0.50},
+    {"name":"Tote Bag","retail_gross":19.90,"pod_gross":8.92,"shipping_net":4.20,"branding_net":0.50},
+    {"name":"Archiv A2 Poster","retail_gross":29.90,"pod_net":null,"shipping_net":5.00,"branding_net":0.50}
+  ],
+  "note":"Scenario assumptions only. See docs/ECONOMICS.md for source context."
+}

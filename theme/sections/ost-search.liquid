@@ -1,0 +1,12 @@
+<section class="section wrap"><h1>SUCHE.</h1><form action="{{ routes.search_url }}" method="get" role="search"><label for="Search">Suchbegriff</label><input type="search" id="Search" name="q" value="{{ search.terms | escape }}"><button type="submit" class="button">Suchen</button></form>{% if search.performed %}{% paginate search.results by 24 %}<p>{{ search.results_count }} Ergebnisse</p><div class="product-grid">{% for item in search.results %}{% if item.object_type == 'product' %}{% render 'ost-product-card', product: item %}{% else %}<article><h2><a href="{{ item.url }}">{{ item.title | escape }}</a></h2></article>{% endif %}{% endfor %}</div>{{ paginate | default_pagination }}{% endpaginate %}{% endif %}</section>
+{% schema %}
+{
+  "name": "Ost Search",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Ost Search"
+    }
+  ]
+}
+{% endschema %}

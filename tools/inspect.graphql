@@ -1,0 +1,1 @@
+query OSTExisting { pages(first:100) { nodes { id handle title } } collections(first:100) { nodes { id handle title } } metaobjectDefinitions(first:100) { nodes { id type } } }

@@ -1,0 +1,30 @@
+<section class="wrap section"><div class="page-heading"><p class="eyebrow">{{ settings.brand_name | escape }}</p><h1>{{ page.title | escape }}</h1>{{ page.content }}</div>{% assign entries = metaobjects.ost_voice.values %}{% if section.settings.content_type == 'place' %}{% assign entries = metaobjects.ost_place.values %}{% endif %}<div class="archive-grid">{% for entry in entries %}{% if entry.published.value == true %}<article class="archive-card">{% if entry.portrait.value %}{{ entry.portrait.value | image_url: width: 700 | image_tag: loading: 'lazy' }}{% endif %}<h2><a href="{{ entry.system.url }}">{{ entry.name.value | escape }}</a></h2><p>{{ entry.kicker.value | escape }}</p></article>{% endif %}{% endfor %}</div></section>
+
+{% schema %}
+{
+  "name": "Ost Content Grid",
+  "settings": [
+    {
+      "type": "select",
+      "id": "content_type",
+      "label": "Inhalte",
+      "default": "voice",
+      "options": [
+        {
+          "value": "voice",
+          "label": "Stimmen"
+        },
+        {
+          "value": "place",
+          "label": "Orte"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Ost Content Grid"
+    }
+  ]
+}
+{% endschema %}

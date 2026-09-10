@@ -1,0 +1,1 @@
+mutation OSTPage($page: PageCreateInput!) { pageCreate(page:$page) { page { id handle } userErrors { field message } } }

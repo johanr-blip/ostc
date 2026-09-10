@@ -1,0 +1,18 @@
+{
+  "sections": {
+    "0": {
+      "type": "ost-page"
+    },
+    "1": {
+      "type": "ost-bundles"
+    },
+    "2": {
+      "type": "ost-newsletter"
+    }
+  },
+  "order": [
+    "0",
+    "1",
+    "2"
+  ]
+}

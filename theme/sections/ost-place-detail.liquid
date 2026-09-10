@@ -1,0 +1,12 @@
+{% if metaobject.published.value == true %}<article class="wrap prose"><p class="eyebrow">{{ settings.brand_name | escape }} / ORTE</p><h1>{{ metaobject.name.value | escape }}</h1>{% if metaobject.portrait.value %}{{ metaobject.portrait.value | image_url: width: 1200 | image_tag: loading: 'eager' }}{% endif %}<p>{{ metaobject.kicker.value | escape }}</p>{{ metaobject.story | metafield_tag }}{% if metaobject.statement.value != blank %}<blockquote>{{ metaobject.statement.value | escape }}</blockquote>{% endif %}</article>{% else %}<div class="wrap prose"><h1>BEITRAG IN VORBEREITUNG.</h1></div>{% endif %}
+{% schema %}
+{
+  "name": "Ost Place Detail",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Ost Place Detail"
+    }
+  ]
+}
+{% endschema %}

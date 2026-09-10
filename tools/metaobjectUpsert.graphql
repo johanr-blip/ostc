@@ -1,0 +1,1 @@
+mutation OSTEntry($handle:MetaobjectHandleInput!,$metaobject:MetaobjectUpsertInput!) { metaobjectUpsert(handle:$handle,metaobject:$metaobject) { metaobject { id handle } userErrors { field message } } }

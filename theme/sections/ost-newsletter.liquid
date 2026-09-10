@@ -1,0 +1,32 @@
+<section class="newsletter section wrap" id="waitlist"><div><p class="eyebrow">{{ section.settings.kicker | escape }}</p><h2>{{ section.settings.heading | escape }}</h2><p>{{ section.settings.copy | escape }}</p></div><div>{% render 'ost-newsletter-form', section: section %}</div></section>
+
+{% schema %}
+{
+  "name": "Ost Newsletter",
+  "settings": [
+    {
+      "type": "text",
+      "id": "kicker",
+      "label": "Kicker",
+      "default": "FOUNDING DROP 001"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Titel",
+      "default": "SEI VON ANFANG AN DABEI."
+    },
+    {
+      "type": "text",
+      "id": "copy",
+      "label": "Text",
+      "default": "Die ersten Teile. Die ersten Geschichten. Erfahre, wann es losgeht."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Ost Newsletter"
+    }
+  ]
+}
+{% endschema %}

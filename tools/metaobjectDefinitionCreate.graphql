@@ -1,0 +1,1 @@
+mutation OSTDefinition($definition: MetaobjectDefinitionCreateInput!) { metaobjectDefinitionCreate(definition:$definition) { metaobjectDefinition { id type } userErrors { field message } } }

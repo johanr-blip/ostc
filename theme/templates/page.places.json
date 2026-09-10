@@ -1,0 +1,17 @@
+{
+  "sections": {
+    "0": {
+      "type": "ost-content-grid",
+      "settings": {
+        "content_type": "place"
+      }
+    },
+    "1": {
+      "type": "ost-newsletter"
+    }
+  },
+  "order": [
+    "0",
+    "1"
+  ]
+}

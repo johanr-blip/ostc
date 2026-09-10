@@ -1,0 +1,13 @@
+{% if metaobject.published.value == true %}<article class="wrap prose"><p class="eyebrow">{{ settings.brand_name | escape }} ARCHIV {{ metaobject.archive_number.value | escape }}</p><h1>{{ metaobject.name.value | escape }}</h1><p>{{ metaobject.years_display.value | escape }} / {{ metaobject.place.value | escape }}</p>{% if metaobject.portrait.value %}{{ metaobject.portrait.value | image_url: width: 1200 | image_tag: loading: 'eager' }}{% endif %}<h2>{{ metaobject.kicker.value | escape }}</h2><p>{{ metaobject.short_bio.value | escape }}</p>{{ metaobject.long_bio | metafield_tag }}{% if metaobject.quote.value != blank %}<blockquote>{{ metaobject.quote.value | escape }}</blockquote>{% endif %}{% if metaobject.linked_product.value != blank %}<a class="button" href="{{ metaobject.linked_product.value.url }}">Poster entdecken ↗</a>{% endif %}</article>{% else %}<div class="wrap prose"><h1>BEITRAG IN VORBEREITUNG.</h1><a href="/pages/archiv">Zum Archiv</a></div>{% endif %}
+
+{% schema %}
+{
+  "name": "Ost Archive Detail",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Ost Archive Detail"
+    }
+  ]
+}
+{% endschema %}

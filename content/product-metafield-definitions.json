@@ -1,0 +1,56 @@
+[
+  {
+    "key": "line",
+    "name": "Line",
+    "type": "single_line_text_field",
+    "required": false
+  },
+  {
+    "key": "drop",
+    "name": "Drop",
+    "type": "single_line_text_field",
+    "required": false
+  },
+  {
+    "key": "sale_mode",
+    "name": "Sale Mode",
+    "type": "single_line_text_field",
+    "required": false
+  },
+  {
+    "key": "shipping_window",
+    "name": "Shipping Window",
+    "type": "single_line_text_field",
+    "required": false
+  },
+  {
+    "key": "gsm",
+    "name": "Gsm",
+    "type": "number_integer",
+    "required": false
+  },
+  {
+    "key": "material",
+    "name": "Material",
+    "type": "multi_line_text_field",
+    "required": false
+  },
+  {
+    "key": "production_method",
+    "name": "Production Method",
+    "type": "single_line_text_field",
+    "required": false
+  },
+  {
+    "key": "fit",
+    "name": "Fit",
+    "type": "single_line_text_field",
+    "required": false
+  },
+  {
+    "key": "size_guide",
+    "name": "Size Guide",
+    "type": "rich_text_field",
+    "required": false
+  }
+]

@@ -1,0 +1,332 @@
+{
+  "definitions": {
+    "ost_archive_person": {
+      "id": "gid://shopify/MetaobjectDefinition/48130425169",
+      "type": "ost_archive_person"
+    },
+    "ost_voice": {
+      "id": "gid://shopify/MetaobjectDefinition/48130490705",
+      "type": "ost_voice"
+    },
+    "ost_place": {
+      "id": "gid://shopify/MetaobjectDefinition/48130523473",
+      "type": "ost_place"
+    },
+    "ost_rights_record": {
+      "id": "gid://shopify/MetaobjectDefinition/48130556241",
+      "type": "ost_rights_record"
+    }
+  },
+  "metafields": {
+    "line": {
+      "id": "gid://shopify/MetafieldDefinition/552797667665",
+      "key": "line"
+    },
+    "drop": {
+      "id": "gid://shopify/MetafieldDefinition/552797700433",
+      "key": "drop"
+    },
+    "sale_mode": {
+      "id": "gid://shopify/MetafieldDefinition/552797733201",
+      "key": "sale_mode"
+    },
+    "shipping_window": {
+      "id": "gid://shopify/MetafieldDefinition/552797765969",
+      "key": "shipping_window"
+    },
+    "gsm": {
+      "id": "gid://shopify/MetafieldDefinition/552797798737",
+      "key": "gsm"
+    },
+    "material": {
+      "id": "gid://shopify/MetafieldDefinition/552797831505",
+      "key": "material"
+    },
+    "production_method": {
+      "id": "gid://shopify/MetafieldDefinition/552797864273",
+      "key": "production_method"
+    },
+    "fit": {
+      "id": "gid://shopify/MetafieldDefinition/552797897041",
+      "key": "fit"
+    },
+    "size_guide": {
+      "id": "gid://shopify/MetafieldDefinition/552797929809",
+      "key": "size_guide"
+    },
+    "archive_link": {
+      "id": "gid://shopify/MetafieldDefinition/552797962577",
+      "key": "archive_link"
+    }
+  },
+  "pages": {
+    "haltung": {
+      "id": "gid://shopify/Page/171559551313",
+      "handle": "haltung"
+    },
+    "drop-001": {
+      "id": "gid://shopify/Page/171559584081",
+      "handle": "drop-001"
+    },
+    "faq": {
+      "id": "gid://shopify/Page/171559616849",
+      "handle": "faq"
+    },
+    "archiv": {
+      "id": "gid://shopify/Page/171559649617",
+      "handle": "archiv"
+    },
+    "stimmen": {
+      "id": "gid://shopify/Page/171559682385",
+      "handle": "stimmen"
+    },
+    "orte": {
+      "id": "gid://shopify/Page/171559715153",
+      "handle": "orte"
+    },
+    "kontakt": {
+      "id": "gid://shopify/Page/171559747921",
+      "handle": "kontakt"
+    },
+    "impressum": {
+      "id": "gid://shopify/Page/171559780689",
+      "handle": "impressum"
+    },
+    "datenschutz": {
+      "id": "gid://shopify/Page/171559813457",
+      "handle": "datenschutz"
+    },
+    "agb": {
+      "id": "gid://shopify/Page/171559846225",
+      "handle": "agb"
+    },
+    "widerruf": {
+      "id": "gid://shopify/Page/171559878993",
+      "handle": "widerruf"
+    },
+    "versand": {
+      "id": "gid://shopify/Page/171559911761",
+      "handle": "versand"
+    },
+    "retouren": {
+      "id": "gid://shopify/Page/171559944529",
+      "handle": "retouren"
+    }
+  },
+  "products": {
+    "ostmann-heavy-tee": {
+      "id": "gid://shopify/Product/11124909900113",
+      "handle": "ostmann-heavy-tee",
+      "variants": {
+        "nodes": [
+          {
+            "id": "gid://shopify/ProductVariant/54841582059857",
+            "title": "XS"
+          },
+          {
+            "id": "gid://shopify/ProductVariant/54841582092625",
+            "title": "S"
+          },
+          {
+            "id": "gid://shopify/ProductVariant/54841582125393",
+            "title": "M"
+          },
+          {
+            "id": "gid://shopify/ProductVariant/54841582158161",
+            "title": "L"
+          },
+          {
+            "id": "gid://shopify/ProductVariant/54841582190929",
+            "title": "XL"
+          },
+          {
+            "id": "gid://shopify/ProductVariant/54841582223697",
+            "title": "XXL"
+          }
+        ]
+      }
+    },
+    "ostmann-heavy-hoodie": {
+      "id": "gid://shopify/Product/11124909965649",
+      "handle": "ostmann-heavy-hoodie",
+      "variants": {
+        "nodes": [
+          {
+            "id": "gid://shopify/ProductVariant/54841582289233",
+            "title": "XS"
+          },
+          {
+            "id": "gid://shopify/ProductVariant/54841582322001",
+            "title": "S"
+          },
+          {
+            "id": "gid://shopify/ProductVariant/54841582354769",
+            "title": "M"
+          },
+          {
+            "id": "gid://shopify/ProductVariant/54841582387537",
+            "title": "L"
+          },
+          {
+            "id": "gid://shopify/ProductVariant/54841582420305",
+            "title": "XL"
+          },
+          {
+            "id": "gid://shopify/ProductVariant/54841582453073",
+            "title": "XXL"
+          }
+        ]
+      }
+    },
+    "ostmann-cap": {
+      "id": "gid://shopify/Product/11124910031185",
+      "handle": "ostmann-cap",
+      "variants": {
+        "nodes": [
+          {
+            "id": "gid://shopify/ProductVariant/54841582518609",
+            "title": "One Size"
+          }
+        ]
+      }
+    },
+    "ostfrau-heavy-tee": {
+      "id": "gid://shopify/Product/11124910096721",
+      "handle": "ostfrau-heavy-tee",
+      "variants": {
+        "nodes": [
+          {
+            "id": "gid://shopify/ProductVariant/54841582584145",
+            "title": "XS"
+          },
+          {
+            "id": "gid://shopify/ProductVariant/54841582616913",
+            "title": "S"
+          },
+          {
+            "id": "gid://shopify/ProductVariant/54841582649681",
+            "title": "M"
+          },
+          {
+            "id": "gid://shopify/ProductVariant/54841582682449",
+            "title": "L"
+          },
+          {
+            "id": "gid://shopify/ProductVariant/54841582715217",
+            "title": "XL"
+          },
+          {
+            "id": "gid://shopify/ProductVariant/54841582747985",
+            "title": "XXL"
+          }
+        ]
+      }
+    },
+    "ostfrau-heavy-hoodie": {
+      "id": "gid://shopify/Product/11124910129489",
+      "handle": "ostfrau-heavy-hoodie",
+      "variants": {
+        "nodes": [
+          {
+            "id": "gid://shopify/ProductVariant/54841582780753",
+            "title": "XS"
+          },
+          {
+            "id": "gid://shopify/ProductVariant/54841582813521",
+            "title": "S"
+          },
+          {
+            "id": "gid://shopify/ProductVariant/54841582846289",
+            "title": "M"
+          },
+          {
+            "id": "gid://shopify/ProductVariant/54841582879057",
+            "title": "L"
+          },
+          {
+            "id": "gid://shopify/ProductVariant/54841582911825",
+            "title": "XL"
+          },
+          {
+            "id": "gid://shopify/ProductVariant/54841582944593",
+            "title": "XXL"
+          }
+        ]
+      }
+    },
+    "ostfrau-cap": {
+      "id": "gid://shopify/Product/11124910195025",
+      "handle": "ostfrau-cap",
+      "variants": {
+        "nodes": [
+          {
+            "id": "gid://shopify/ProductVariant/54841583010129",
+            "title": "One Size"
+          }
+        ]
+      }
+    },
+    "ost-bucket-hat": {
+      "id": "gid://shopify/Product/11124910227793",
+      "handle": "ost-bucket-hat",
+      "variants": {
+        "nodes": [
+          {
+            "id": "gid://shopify/ProductVariant/54841583075665",
+            "title": "One Size"
+          }
+        ]
+      }
+    },
+    "ost-gymbag": {
+      "id": "gid://shopify/Product/11124910260561",
+      "handle": "ost-gymbag",
+      "variants": {
+        "nodes": [
+          {
+            "id": "gid://shopify/ProductVariant/54841583108433",
+            "title": "One Size"
+          }
+        ]
+      }
+    },
+    "ost-tote-bag": {
+      "id": "gid://shopify/Product/11124910326097",
+      "handle": "ost-tote-bag",
+      "variants": {
+        "nodes": [
+          {
+            "id": "gid://shopify/ProductVariant/54841583173969",
+            "title": "One Size"
+          }
+        ]
+      }
+    },
+    "ost-archiv-a2-poster": {
+      "id": "gid://shopify/Product/11124910358865",
+      "handle": "ost-archiv-a2-poster",
+      "variants": {
+        "nodes": [
+          {
+            "id": "gid://shopify/ProductVariant/54841583206737",
+            "title": "A2"
+          }
+        ]
+      }
+    }
+  },
+  "collections": {
+    "ostmann": {
+      "id": "gid://shopify/Collection/689454940497",
+      "handle": "ostmann"
+    },
+    "ostfrau": {
+      "id": "gid://shopify/Collection/689454973265",
+      "handle": "ostfrau"
+    },
+    "drop-001": {
+      "id": "gid://shopify/Collection/689455006033",
+      "handle": "drop-001"
+    }
+  }
+}

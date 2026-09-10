@@ -1,0 +1,15 @@
+<section class="wrap section" id="drop-products"><div class="section-top"><div><p class="eyebrow">FOUNDING DROP 001</p>{% if template.suffix == 'ostmann' or template.suffix == 'ostfrau' %}<h2>{{ collection.title | escape }}</h2>{% else %}<h1>{{ collection.title | escape }}</h1>{% endif %}{{ collection.description }}</div></div>
+{% paginate collection.products by 24 %}<div class="collection-toolbar"><p>{{ collection.products_count }} Teile</p><form method="get"><label for="Sort">Sortieren</label><select name="sort_by" id="Sort">{% assign current_sort = collection.sort_by | default: collection.default_sort_by %}{% for option in collection.sort_options %}<option value="{{ option.value }}" {% if option.value == current_sort %}selected{% endif %}>{{ option.name | escape }}</option>{% endfor %}</select><button type="submit" class="text-link">Anwenden</button></form></div><div class="product-grid">{% for product in collection.products %}{% render 'ost-product-card', product: product, index: forloop.index %}{% else %}<p>Der Drop wird vorbereitet. Melde dich für Neuigkeiten an.</p>{% endfor %}</div>{% if paginate.pages > 1 %}<nav class="pagination" aria-label="Weitere Produkte">{{ paginate | default_pagination }}</nav>{% endif %}{% endpaginate %}
+{% if settings.concept_mode %}<p class="note">{{ settings.price_note | escape }}</p>{% endif %}</section>
+
+{% schema %}
+{
+  "name": "Ost Collection",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Ost Collection"
+    }
+  ]
+}
+{% endschema %}

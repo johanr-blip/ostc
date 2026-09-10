@@ -1,0 +1,32 @@
+{
+  "general": {
+    "skip": "Zum Inhalt springen",
+    "menu": "Menü",
+    "cart": "Warenkorb",
+    "search": "Suche",
+    "back": "Zurück zum Shop"
+  },
+  "newsletter": {
+    "email": "Deine E-Mail-Adresse",
+    "submit": "Drop 001 vormerken",
+    "success": "Bitte prüfe dein Postfach und bestätige deine Anmeldung über den Link in der E-Mail.",
+    "unavailable": "Die Anmeldung öffnet zum Start der Warteliste."
+  },
+  "product": {
+    "add": "In den Warenkorb",
+    "preorder": "Verbindlich vorbestellen",
+    "sold_out": "Ausverkauft",
+    "waitlist": "Drop vormerken",
+    "quantity": "Anzahl",
+    "variant": "Größe / Variante",
+    "taxes": "Inkl. MwSt.",
+    "shipping": "zzgl. Versand"
+  },
+  "cart": {
+    "empty": "Dein Warenkorb ist noch leer.",
+    "update": "Warenkorb aktualisieren",
+    "checkout": "Zur Kasse",
+    "remove": "Entfernen",
+    "subtotal": "Zwischensumme"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "current": {
+    "brand_name": "OST.",
+    "line_a_name": "OSTMANN",
+    "line_b_name": "OSTFRAU",
+    "tagline": "VOM OSTEN. NACH VORN.",
+    "copyright_name": "OST.",
+    "sale_mode": "waitlist",
+    "commerce_ready": false,
+    "newsletter_ready": false,
+    "contact_ready": false,
+    "concept_mode": true,
+    "preorder_ready": false,
+    "price_note": "Geplanter Endpreis. Noch nicht bestellbar.",
+    "line_a_collection": "ostmann",
+    "line_b_collection": "ostfrau",
+    "privacy_page": "datenschutz",
+    "shipping_page": "versand",
+    "returns_page": "retouren",
+    "terms_page": "agb",
+    "withdrawal_page": "widerruf",
+    "imprint_page": "impressum"
+  },
+  "presets": {}
+}

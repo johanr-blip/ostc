@@ -1,0 +1,4 @@
+{% doc %}
+@param {string} line - Stable internal line identifier.
+{% enddoc %}
+{%- if line == 'ostfrau' -%}{{ settings.line_b_name | escape }}{%- else -%}{{ settings.line_a_name | escape }}{%- endif -%}

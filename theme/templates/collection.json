@@ -1,0 +1,14 @@
+{
+  "sections": {
+    "0": {
+      "type": "ost-collection"
+    },
+    "1": {
+      "type": "ost-newsletter"
+    }
+  },
+  "order": [
+    "0",
+    "1"
+  ]
+}

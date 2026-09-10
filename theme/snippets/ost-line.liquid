@@ -1,0 +1,8 @@
+{%- doc -%}Returns the current line from the resource or collection template.{%- enddoc -%}
+{%- if template.suffix == 'ostfrau' or product.metafields.ost.line.value == 'ostfrau' -%}
+ostfrau
+{%- elsif collection.handle != blank and settings.line_b_collection != blank and collection.handle == settings.line_b_collection.handle -%}
+ostfrau
+{%- else -%}
+ostmann
+{%- endif -%}

@@ -1,0 +1,38 @@
+<section class="manifesto wrap" aria-labelledby="Manifesto-{{ section.id }}"><div><p class="eyebrow">{{ section.settings.kicker | escape }}</p><h2 id="Manifesto-{{ section.id }}">{{ section.settings.heading_a | escape }}<br>{{ section.settings.heading_b | escape }}</h2></div><div class="manifesto-copy">{{ section.settings.copy }}<a class="text-link" href="/pages/haltung">Unsere Haltung ↗</a></div></section>
+
+{% schema %}
+{
+  "name": "Ost Manifesto",
+  "settings": [
+    {
+      "type": "text",
+      "id": "kicker",
+      "label": "Kicker",
+      "default": "01 / UNSERE HALTUNG"
+    },
+    {
+      "type": "text",
+      "id": "heading_a",
+      "label": "Titel 1",
+      "default": "NICHT NOSTALGIE."
+    },
+    {
+      "type": "text",
+      "id": "heading_b",
+      "label": "Titel 2",
+      "default": "HERKUNFT."
+    },
+    {
+      "type": "richtext",
+      "id": "copy",
+      "label": "Text",
+      "default": "<p>Herkunft ist ein Teil von uns. Kein fertiges Bild. Kein Grund, andere kleiner zu machen.</p><p>Wir tragen Geschichten aus dem Osten weiter. Mit ihren Brüchen. Mit ihrem Eigensinn. Mit Blick nach vorn.</p>"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Ost Manifesto"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,24 @@
+<header class="site-header">
+ <div class="header-main wrap">
+  <a class="wordmark" href="{{ routes.root_url }}" aria-label="{{ settings.brand_name | escape }} Startseite">{{ settings.brand_name | escape }}</a>
+  <nav class="desktop-nav" aria-label="Hauptnavigation">{% render 'ost-nav' %}</nav>
+  <span class="header-note">{{ section.settings.note | escape }}</span>
+  <a class="cart-link" href="{{ routes.cart_url }}">BAG ({{ cart.item_count }})<span class="visually-hidden"> {{ 'general.cart' | t }}</span></a>
+  <details class="mobile-nav"><summary>{{ 'general.menu' | t }}</summary><nav aria-label="Mobile Navigation">{% render 'ost-nav' %}</nav></details>
+ </div>
+ {% render 'ost-switch' %}
+</header>
+
+{% schema %}
+{
+  "name": "Ost Header",
+  "settings": [
+    {
+      "type": "text",
+      "id": "note",
+      "label": "Hinweis",
+      "default": "HERKUNFT VERBINDET."
+    }
+  ]
+}
+{% endschema %}

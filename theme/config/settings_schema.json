@@ -1,0 +1,156 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "OST Founding",
+    "theme_author": "OST",
+    "theme_version": "1.0.0",
+    "theme_documentation_url": "https://help.shopify.com/en/manual/online-store/themes",
+    "theme_support_url": "https://help.shopify.com/"
+  },
+  {
+    "name": "Marke und Navigation",
+    "settings": [
+      {
+        "type": "text",
+        "id": "brand_name",
+        "label": "Dachmarke",
+        "default": "OST."
+      },
+      {
+        "type": "text",
+        "id": "line_a_name",
+        "label": "Linie A",
+        "default": "OSTMANN"
+      },
+      {
+        "type": "text",
+        "id": "line_b_name",
+        "label": "Linie B",
+        "default": "OSTFRAU"
+      },
+      {
+        "type": "collection",
+        "id": "line_a_collection",
+        "label": "Collection Linie A"
+      },
+      {
+        "type": "collection",
+        "id": "line_b_collection",
+        "label": "Collection Linie B"
+      },
+      {
+        "type": "link_list",
+        "id": "main_menu",
+        "label": "Hauptmenü"
+      },
+      {
+        "type": "text",
+        "id": "tagline",
+        "label": "Leitidee",
+        "default": "VOM OSTEN. NACH VORN."
+      },
+      {
+        "type": "text",
+        "id": "copyright_name",
+        "label": "Name im Footer",
+        "default": "OST."
+      },
+      {
+        "type": "text",
+        "id": "contact_email",
+        "label": "Öffentliche Kontakt-E-Mail"
+      }
+    ]
+  },
+  {
+    "name": "Launch und Freigaben",
+    "settings": [
+      {
+        "type": "select",
+        "id": "sale_mode",
+        "label": "Globaler Verkaufsmodus",
+        "default": "waitlist",
+        "options": [
+          {
+            "value": "waitlist",
+            "label": "Warteliste"
+          },
+          {
+            "value": "preorder",
+            "label": "Vorbestellung"
+          },
+          {
+            "value": "live",
+            "label": "Shop"
+          }
+        ]
+      },
+      {
+        "type": "checkbox",
+        "id": "commerce_ready",
+        "label": "Verkauf, Rechtstexte und Lieferfähigkeit im Shop geprüft",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "newsletter_ready",
+        "label": "Double Opt-in, Absender und Datenschutz geprüft",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "contact_ready",
+        "label": "Kontaktformular und Datenschutzerklärung geprüft",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "concept_mode",
+        "label": "Konzeptbilder und Planpreise kennzeichnen",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "preorder_ready",
+        "label": "Purchase-Option-App für Preorder getestet",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "price_note",
+        "label": "Hinweis an Preisen",
+        "default": "Geplanter Endpreis. Noch nicht bestellbar."
+      },
+      {
+        "type": "page",
+        "id": "privacy_page",
+        "label": "Datenschutzseite"
+      },
+      {
+        "type": "page",
+        "id": "shipping_page",
+        "label": "Versandseite"
+      },
+      {
+        "type": "page",
+        "id": "returns_page",
+        "label": "Retourenseite"
+      },
+      {
+        "type": "page",
+        "id": "terms_page",
+        "label": "AGB-Seite"
+      },
+      {
+        "type": "page",
+        "id": "withdrawal_page",
+        "label": "Widerrufsseite"
+      },
+      {
+        "type": "page",
+        "id": "imprint_page",
+        "label": "Impressumsseite"
+      }
+    ]
+  }
+]

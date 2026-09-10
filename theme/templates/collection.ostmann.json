@@ -1,0 +1,22 @@
+{
+  "sections": {
+    "0": {
+      "type": "ost-hero"
+    },
+    "1": {
+      "type": "ost-collection"
+    },
+    "2": {
+      "type": "ost-manifesto"
+    },
+    "3": {
+      "type": "ost-newsletter"
+    }
+  },
+  "order": [
+    "0",
+    "1",
+    "2",
+    "3"
+  ]
+}

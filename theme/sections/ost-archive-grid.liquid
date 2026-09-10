@@ -1,0 +1,13 @@
+<section class="wrap section"><div class="page-heading"><p class="eyebrow">{{ settings.brand_name | escape }} ARCHIV</p><h1>MENSCHEN, DIE<br>DEN OSTEN PRÄGEN.</h1><p>Ein Archiv für Geschichten mit Eigensinn. Erfolge, Brüche und Widersprüche gehören zusammen.</p></div>{% assign count = 0 %}<div class="archive-grid">{% paginate metaobjects.ost_archive_person.values by 24 %}{% for person in metaobjects.ost_archive_person.values %}{% if person.published.value == true %}{% assign count = count | plus: 1 %}<article class="archive-card">{% if person.portrait.value %}{{ person.portrait.value | image_url: width: 700 | image_tag: loading: 'lazy' }}{% endif %}<p class="eyebrow">ARCHIV {{ person.archive_number.value | escape }}</p><h2><a href="{{ person.system.url }}">{{ person.name.value | escape }}</a></h2><p>{{ person.short_bio.value | escape }}</p></article>{% endif %}{% endfor %}{% if paginate.pages > 1 %}{{ paginate | default_pagination }}{% endif %}{% endpaginate %}</div>{% if count == 0 %}<div class="empty-state"><span class="tag">DAS ARCHIV ENTSTEHT</span><h2>GUTE GESCHICHTEN<br>BRAUCHEN SORGFALT.</h2><p>Wir recherchieren die ersten Porträts. Veröffentlicht wird, wenn Texte geprüft und Bildrechte geklärt sind.</p><p>Postereditionen folgen erst mit einer gesonderten Freigabe für die kommerzielle Nutzung.</p></div>{% endif %}</section>
+
+{% schema %}
+{
+  "name": "Ost Archive Grid",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Ost Archive Grid"
+    }
+  ]
+}
+{% endschema %}

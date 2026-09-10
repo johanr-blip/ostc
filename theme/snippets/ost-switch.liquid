@@ -1,0 +1,9 @@
+{% doc %}
+Renders indexable collection links.
+{% enddoc %}
+{% capture current_line %}{% render 'ost-line' %}{% endcapture %}
+<nav class="line-switch" aria-label="Markenwelten" data-line="{{ current_line }}">
+ <a href="{{ settings.line_a_collection.url | default: '/collections/ostmann' }}" {% if current_line == 'ostmann' %}aria-current="page"{% endif %}>{{ settings.line_a_name | escape }}</a>
+ <span class="switch-track" aria-hidden="true"></span>
+ <a href="{{ settings.line_b_collection.url | default: '/collections/ostfrau' }}" {% if current_line == 'ostfrau' %}aria-current="page"{% endif %}>{{ settings.line_b_name | escape }}</a>
+</nav>

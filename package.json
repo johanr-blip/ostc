@@ -1,0 +1,21 @@
+{
+  "name": "ost-shopify-project",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portable OST Shopify theme, content and agent handoff",
+  "engines": { "node": ">=22.12.0" },
+  "scripts": {
+    "shopify": "shopify",
+    "check": "shopify theme check --path theme && node --check theme/assets/ost.js && node tools/check-project.mjs",
+    "preview:build": "node tools/render-preview.mjs",
+    "preview": "python3 -m http.server 4173 --directory preview/dist",
+    "test:preview": "node tools/check-preview.mjs",
+    "theme:package": "python3 tools/package-theme.py",
+    "theme:push": "node tools/push-theme.mjs",
+    "test": "npm run check && npm run preview:build && npm run test:preview"
+  },
+  "devDependencies": {
+    "@shopify/cli": "4.8.0",
+    "liquidjs": "10.29.0"
+  }
+}

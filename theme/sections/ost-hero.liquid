@@ -1,0 +1,89 @@
+{% capture line %}{% render 'ost-line' %}{% endcapture %}
+{% assign hero_image = section.settings.image_a %}{% assign hero_asset = 'ostmann-editorial.webp' %}{% assign hero_alt = 'Konzeptaufnahme: schwarzes Heavy Tee vor einer Betonwand' %}
+{% if line == 'ostfrau' %}{% assign hero_image = section.settings.image_b %}{% assign hero_asset = 'ostfrau-editorial.webp' %}{% endif %}
+<section class="hero" aria-labelledby="HeroHeading-{{ section.id }}">
+ {% if hero_image != blank %}{{ hero_image | image_url: width: 2200 | image_tag: class: 'hero-image', widths: '600, 900, 1200, 1600, 2200', sizes: '100vw', loading: 'eager', fetchpriority: 'high' }}{% elsif settings.concept_mode %}<img class="hero-image" src="{{ hero_asset | asset_url }}" width="1536" height="1024" alt="{{ hero_alt }}" fetchpriority="high">{% endif %}
+ <div class="hero-inner wrap">
+  <p class="eyebrow hero-label">{{ section.settings.kicker | escape }} &nbsp; / &nbsp; {% render 'ost-line-name', line: line %}</p>
+  <h1 id="HeroHeading-{{ section.id }}">{{ section.settings.heading_a | escape }}<br>{{ section.settings.heading_b | escape }}</h1>
+  <a class="button light" href="{{ section.settings.link | default: '#drop-products' }}">{{ section.settings.cta | escape }} <span aria-hidden="true">↗</span></a>
+  <div class="hero-bottom"><p>{{ section.settings.caption | escape }}</p><span class="hero-line">{% render 'ost-line-name', line: line %}</span><span class="meta">001 / 026</span></div>
+ </div>
+</section>
+<div class="ticker wrap"><span>{{ section.settings.strip_a | escape }}</span><span>{{ section.settings.strip_b | escape }}</span><span>{% if settings.concept_mode %}KONZEPTBILD · DROP IN ENTWICKLUNG{% else %}{{ section.settings.strip_c | escape }}{% endif %}</span></div>
+
+{% schema %}
+{
+  "name": "Ost Hero",
+  "settings": [
+    {
+      "type": "text",
+      "id": "kicker",
+      "label": "Kicker",
+      "default": "FOUNDING DROP 001"
+    },
+    {
+      "type": "text",
+      "id": "heading_a",
+      "label": "Titel Zeile 1",
+      "default": "VOM OSTEN."
+    },
+    {
+      "type": "text",
+      "id": "heading_b",
+      "label": "Titel Zeile 2",
+      "default": "NACH VORN."
+    },
+    {
+      "type": "text",
+      "id": "cta",
+      "label": "Button",
+      "default": "Drop 001 entdecken"
+    },
+    {
+      "type": "url",
+      "id": "link",
+      "label": "Button-Link"
+    },
+    {
+      "type": "text",
+      "id": "caption",
+      "label": "Bildunterschrift",
+      "default": "Für das, was uns geprägt hat. Und alles, was noch kommt."
+    },
+    {
+      "type": "image_picker",
+      "id": "image_a",
+      "label": "Hero Linie A"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_b",
+      "label": "Hero Linie B"
+    },
+    {
+      "type": "text",
+      "id": "strip_a",
+      "label": "Leiste links",
+      "default": "ZWEI NAMEN. EINE HERKUNFT."
+    },
+    {
+      "type": "text",
+      "id": "strip_b",
+      "label": "Leiste Mitte",
+      "default": "SCHWARZ. WEISS. KLARE HALTUNG."
+    },
+    {
+      "type": "text",
+      "id": "strip_c",
+      "label": "Leiste rechts",
+      "default": "FOUNDING DROP 001"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Ost Hero"
+    }
+  ]
+}
+{% endschema %}

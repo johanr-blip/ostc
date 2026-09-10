@@ -1,0 +1,132 @@
+[
+  {
+    "handle": "ostmann-heavy-tee",
+    "title": "OSTMANN Heavy Tee",
+    "price": 3990,
+    "type": "T-Shirt",
+    "line": "ostmann",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "description": "<p>Ein schwarzes Tee mit ruhiger, weißer Wortmarke. Geplant sind ein relaxed Fit und ca. 220–250 g/m². Material, Maße und Ausführung werden nach dem Mustertest bestätigt.</p><p>Designkonzept. Noch nicht bestellbar. Geplanter Endpreis.</p>"
+  },
+  {
+    "handle": "ostmann-heavy-hoodie",
+    "title": "OSTMANN Heavy Hoodie",
+    "price": 7490,
+    "type": "Hoodie",
+    "line": "ostmann",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "description": "<p>Ein schwarzer Hoodie als Kern des ersten Drops. Ziel sind ein schwerer Stoff und ein entspannter Schnitt. Die genaue Ausführung folgt nach dem Mustertest.</p><p>Designkonzept. Noch nicht bestellbar. Geplanter Endpreis.</p>"
+  },
+  {
+    "handle": "ostmann-cap",
+    "title": "OSTMANN Cap",
+    "price": 3290,
+    "type": "Cap",
+    "line": "ostmann",
+    "sizes": [
+      "One Size"
+    ],
+    "description": "<p>Ein klares Zeichen im Alltag. Schwarz, mit weißer Wortmarke. Stickverfahren und Passform werden nach dem Mustertest festgelegt.</p><p>Designkonzept. Noch nicht bestellbar. Geplanter Endpreis.</p>"
+  },
+  {
+    "handle": "ostfrau-heavy-tee",
+    "title": "OSTFRAU Heavy Tee",
+    "price": 3990,
+    "type": "T-Shirt",
+    "line": "ostfrau",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "description": "<p>Ein schwarzes Tee mit ruhiger, weißer Wortmarke. Geplant sind ein relaxed Fit und ca. 220–250 g/m². Material, Maße und Ausführung werden nach dem Mustertest bestätigt.</p><p>Designkonzept. Noch nicht bestellbar. Geplanter Endpreis.</p>"
+  },
+  {
+    "handle": "ostfrau-heavy-hoodie",
+    "title": "OSTFRAU Heavy Hoodie",
+    "price": 7490,
+    "type": "Hoodie",
+    "line": "ostfrau",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "description": "<p>Ein schwarzer Hoodie als Kern des ersten Drops. Ziel sind ein schwerer Stoff und ein entspannter Schnitt. Die genaue Ausführung folgt nach dem Mustertest.</p><p>Designkonzept. Noch nicht bestellbar. Geplanter Endpreis.</p>"
+  },
+  {
+    "handle": "ostfrau-cap",
+    "title": "OSTFRAU Cap",
+    "price": 3290,
+    "type": "Cap",
+    "line": "ostfrau",
+    "sizes": [
+      "One Size"
+    ],
+    "description": "<p>Ein klares Zeichen im Alltag. Schwarz, mit weißer Wortmarke. Stickverfahren und Passform werden nach dem Mustertest festgelegt.</p><p>Designkonzept. Noch nicht bestellbar. Geplanter Endpreis.</p>"
+  },
+  {
+    "handle": "ost-bucket-hat",
+    "title": "OST. Bucket Hat",
+    "price": 2990,
+    "type": "Bucket Hat",
+    "line": "unisex",
+    "sizes": [
+      "One Size"
+    ],
+    "description": "<p>Produktidee für Drop 001. Design, Material und Ausführung sind in Entwicklung. Noch nicht bestellbar.</p>"
+  },
+  {
+    "handle": "ost-gymbag",
+    "title": "OST. Gymbag",
+    "price": 2290,
+    "type": "Gymbag",
+    "line": "unisex",
+    "sizes": [
+      "One Size"
+    ],
+    "description": "<p>Produktidee für Drop 001. Design, Material und Ausführung sind in Entwicklung. Noch nicht bestellbar.</p>"
+  },
+  {
+    "handle": "ost-tote-bag",
+    "title": "OST. Tote Bag",
+    "price": 1990,
+    "type": "Tote Bag",
+    "line": "unisex",
+    "sizes": [
+      "One Size"
+    ],
+    "description": "<p>Produktidee für Drop 001. Design, Material und Ausführung sind in Entwicklung. Noch nicht bestellbar.</p>"
+  },
+  {
+    "handle": "ost-archiv-a2-poster",
+    "title": "OST. Archiv A2 Poster",
+    "price": 2990,
+    "type": "Archiv A2 Poster",
+    "line": "unisex",
+    "sizes": [
+      "A2"
+    ],
+    "description": "<p>Produktidee für Drop 001. Design, Material und Ausführung sind in Entwicklung. Noch nicht bestellbar.</p><p>Das erste Porträtmotiv wird nach redaktioneller und kommerzieller Rechtefreigabe festgelegt.</p>"
+  }
+]

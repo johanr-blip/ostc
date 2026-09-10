@@ -1,0 +1,107 @@
+{
+  "sections": {
+    "0": {
+      "type": "ost-hero"
+    },
+    "1": {
+      "type": "ost-product-grid",
+      "settings": {},
+      "blocks": {
+        "0": {
+          "type": "concept",
+          "settings": {
+            "title": "Heavy Tee",
+            "caption": "Relaxed Fit / Schwarz",
+            "price": "39,90 €"
+          }
+        },
+        "1": {
+          "type": "concept",
+          "settings": {
+            "title": "Heavy Hoodie",
+            "caption": "Schwerer Stoff / Schwarz",
+            "price": "74,90 €"
+          }
+        },
+        "2": {
+          "type": "concept",
+          "settings": {
+            "title": "Cap",
+            "caption": "Klare Linie / Schwarz",
+            "price": "32,90 €"
+          }
+        }
+      },
+      "block_order": [
+        "0",
+        "1",
+        "2"
+      ]
+    },
+    "2": {
+      "type": "ost-manifesto"
+    },
+    "3": {
+      "type": "ost-archive-feature"
+    },
+    "4": {
+      "type": "ost-voices"
+    },
+    "5": {
+      "type": "ost-places",
+      "settings": {},
+      "blocks": {
+        "0": {
+          "type": "place",
+          "settings": {
+            "name": "LEIPZIG",
+            "caption": "SACHSEN",
+            "link": "/pages/orte#leipzig"
+          }
+        },
+        "1": {
+          "type": "place",
+          "settings": {
+            "name": "ROSTOCK",
+            "caption": "MECKLENBURG-VORPOMMERN",
+            "link": "/pages/orte#rostock"
+          }
+        },
+        "2": {
+          "type": "place",
+          "settings": {
+            "name": "CHEMNITZ",
+            "caption": "SACHSEN",
+            "link": "/pages/orte#chemnitz"
+          }
+        },
+        "3": {
+          "type": "place",
+          "settings": {
+            "name": "ERFURT",
+            "caption": "THÜRINGEN",
+            "link": "/pages/orte#erfurt"
+          }
+        }
+      },
+      "block_order": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    "6": {
+      "type": "ost-newsletter"
+    }
+  },
+  "order": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6"
+  ]
+}

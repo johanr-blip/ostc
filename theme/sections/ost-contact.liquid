@@ -1,0 +1,13 @@
+<section class="wrap prose"><p class="eyebrow">{{ settings.brand_name | escape }} / KONTAKT</p><h1>{{ page.title | default: 'KONTAKT.' | escape }}</h1>{{ page.content }}{% if settings.contact_email != blank %}<p><a href="mailto:{{ settings.contact_email | escape }}">{{ settings.contact_email | escape }}</a></p>{% endif %}{% if settings.contact_ready %}{% form 'contact', class: 'contact-form' %}{% if form.posted_successfully? %}<p role="status">Danke. Deine Nachricht wurde übermittelt.</p>{% endif %}{{ form.errors | default_errors }}<label for="ContactName">Name</label><input id="ContactName" name="contact[name]" autocomplete="name"><label for="ContactEmail">E-Mail</label><input id="ContactEmail" name="contact[email]" type="email" required autocomplete="email"><label for="ContactBody">Nachricht</label><textarea id="ContactBody" name="contact[body]" rows="6" required></textarea><p class="note">Informationen zur Verarbeitung stehen in der <a href="{{ settings.privacy_page.url | default: '/pages/datenschutz' }}">Datenschutzerklärung</a>.</p><button class="button" type="submit">Nachricht senden ↗</button>{% endform %}{% else %}<p>Die Kontaktmöglichkeit wird zum Start veröffentlicht.</p>{% endif %}</section>
+
+{% schema %}
+{
+  "name": "Ost Contact",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Ost Contact"
+    }
+  ]
+}
+{% endschema %}

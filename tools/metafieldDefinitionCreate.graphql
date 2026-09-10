@@ -1,0 +1,1 @@
+mutation OSTMetafield($definition: MetafieldDefinitionInput!) { metafieldDefinitionCreate(definition:$definition) { createdDefinition { id key } userErrors { field message } } }
