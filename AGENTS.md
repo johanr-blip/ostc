@@ -19,7 +19,7 @@ Customer-facing copy is German. Preserve the user's typography and names unless 
 - `npm ci`, `npm run check`, `npm run preview:build`, `npm run test:preview` are the portable baseline.
 - Run targeted real Shopify/browser checks for changes involving Liquid resource behavior, forms, carts, theme editor or apps. Local LiquidJS previews are not proof of Shopify runtime correctness.
 - Keep the 360–430px mobile layout usable. Test keyboard focus, native links without JavaScript, reduced motion and image loading.
-- Use one working branch per agent. Read Git status before modifying. Do not overwrite another agent's work or force-push.
+- Use one working branch per agent, based on `develop`. Integrate features into `develop`, then promote tested states to `main`. Read Git status before modifying. Do not overwrite another agent's work or force-push.
 - Record changed behavior, tests actually run and remaining blockers in `docs/STATUS.md` at handoff. Do not claim a test ran when only code inspection occurred.
 
 ## Shop state and access

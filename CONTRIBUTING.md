@@ -3,12 +3,12 @@
 ## Arbeitsablauf
 
 1. Repository aktualisieren und `git status` lesen.
-2. Eigenen Branch anlegen, etwa `feature/product-gallery`.
+2. `develop` aktualisieren und davon einen eigenen Branch anlegen, etwa `feature/product-gallery`.
 3. Aufgabenbereich in der Übergabe benennen. Bei mehreren Agenten getrennte Checkouts verwenden.
 4. Kleine, nachvollziehbare Änderungen machen. Keine personenbezogenen Daten oder Secrets committen.
 5. `npm run check`, Vorschau erzeugen und passende Tests ausführen.
 6. `docs/STATUS.md`, `docs/BACKLOG.md` und `docs/CHANGELOG.md` ergänzen.
-7. Commit und Pull Request oder bewusst abgestimmter Merge. Keine unkoordinierten parallelen Shopify-Uploads.
+7. Commit und Pull Request nach `develop`; geprüfte Zwischenstände anschließend nach `main`. Keine unkoordinierten parallelen Shopify-Uploads.
 
 ## Was eine Übergabe enthalten muss
 

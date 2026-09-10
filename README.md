@@ -73,7 +73,7 @@ Für Admin-Datenzugriff und sichere Übertragung siehe [SHOPIFY.md](docs/SHOPIFY
 
 ## Zusammenarbeit
 
-`main` enthält den dokumentierten gemeinsamen Stand. Für Änderungen einen kurzen Feature-Branch verwenden. Ein Agent pro Branch/Arbeitsverzeichnis, keine parallelen Uploads auf dieselbe Theme-ID. Vor einem Upload den aktuellen Remote-Stand prüfen und Änderungen aus dem Theme-Editor sichern. Keine Force-Pushes und keine unaufgeforderten Live-Veröffentlichungen. [CONTRIBUTING.md](CONTRIBUTING.md) beschreibt die Übergabe.
+`main` enthält den geprüften gemeinsamen Stand; `develop` dient der integrierten Entwicklung. Neue Feature-Branches von `develop` abzweigen und dorthin zurückführen; geprüfte Zwischenstände nach `main` übernehmen. Ein Agent pro Branch/Arbeitsverzeichnis, keine parallelen Uploads auf dieselbe Theme-ID. Vor einem Upload den aktuellen Remote-Stand prüfen und Änderungen aus dem Theme-Editor sichern. Keine Force-Pushes und keine unaufgeforderten Live-Veröffentlichungen. [CONTRIBUTING.md](CONTRIBUTING.md) beschreibt die Übergabe.
 
 ## Rechte und Bilder
 

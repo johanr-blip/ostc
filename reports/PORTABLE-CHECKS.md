@@ -14,6 +14,8 @@ Ausgeführt am 10.09.2026 im neu zusammengestellten Repository nach Installation
 | `python3 tools/store-setup.py --help` | Hilfetext und explizite `--apply`-Schranke verfügbar |
 | Quellen auf lokale Benutzerpfade und typische Token-Muster durchsucht | Keine Treffer in den geteilten Quellen |
 | Wortmarken | Sechs SVG-Konzeptvarianten aus der beigefügten Archivo-Schrift erzeugt |
+| Frisch entpacktes Projekt-ZIP | Erneut `npm ci --ignore-scripts`, `npm test` und `npm run theme:package` erfolgreich; keine Abhängigkeit vom ursprünglichen Arbeitsordner |
+| Store-Hilfe im frisch entpackten Projekt | `--help` ohne vorhandenen temporären Arbeitsordner erfolgreich |
 
 GitHub Actions führt bei Push und Pull Request dieselben Projektprüfungen durch und stellt ein Theme-ZIP als Build-Artefakt bereit. Die Workflow-Datei ist vorbereitet; ihr tatsächlicher Remote-Ausführungsstatus muss in GitHub geprüft werden.
 
