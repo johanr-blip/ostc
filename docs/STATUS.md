@@ -2,6 +2,10 @@
 
 Stand: 10.09.2026. Diese Datei ist die Übergabe für andere Agenten. Nicht aus dem bloßen Vorhandensein eines Templates auf einen abgeschlossenen Geschäftsprozess schließen.
 
+## Gemeinsamer Arbeitsort
+
+Der vollständige Stand wurde erfolgreich nach https://github.com/johanr-blip/ostc übertragen. `main` und `develop` sind angelegt und ihre Remote-Revisionen wurden geprüft. Das Repository ist öffentlich lesbar; zum Ändern sind passende GitHub-Berechtigungen erforderlich. `AGENTS.md` ist der zentrale Einstieg für alle Modelle. Für dateibasierte Übergaben gibt es zusätzlich ein aus den versionierten Dateien erzeugtes Projekt-ZIP.
+
 ## Umgesetzt
 
 - Natives Shopify-Theme mit OSTMANN-/OSTFRAU-Collection-Links, Editorial-Hero, Produktkarten, Haltung, Archiv, Stimmen, Orten, Footer und responsiven Ansichten.

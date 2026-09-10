@@ -9,5 +9,6 @@
 - OST Theme `205871546705` unveröffentlicht hochgeladen; Horizon unverändert live.
 - Sieben KI-Konzeptbilder erzeugt, optimierte WebP-Assets und lokal eingebundene Archivo-Schrift.
 - Kalkulationsdatei mit Annahmen, Deckungsbeiträgen, Break-even und Quellen erstellt.
-- Portable Projektbasis und Übergabe für andere KI-Modelle im Repository `johanr-blip/ostc` vorbereitet.
+- Portable Projektbasis und Übergabe für andere KI-Modelle erfolgreich nach `johanr-blip/ostc` übertragen, mit `main` und `develop`.
+- Frisch entpacktes Projekt ohne ursprünglichen Arbeitsordner installiert, geprüft und als Shopify-Theme paketiert.
 - Keine Bestellungen, Zahlungen, Werbeschaltungen, Newsletter-Sendungen oder Markenanmeldungen ausgeführt.
