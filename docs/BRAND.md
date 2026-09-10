@@ -37,6 +37,8 @@ Tee: 9–12 cm breite weiße Linienwortmarke auf schwarzem Stoff. Zielgewicht 22
 
 Nackenmarke OST. optional und separat kalkulieren. CORE / EMBROIDERED und OST MADE bleiben spätere Ausbaustufen.
 
+Sechs editierbare Vektor-Konzeptdateien liegen unter `assets/wordmarks/`: OST., OSTMANN und OSTFRAU, jeweils schwarz und weiß. Die Buchstaben sind in Pfade umgewandelt. Zur optionalen Neuerzeugung `python3 -m pip install -r tools/requirements-design.txt` und `python3 tools/wordmarks.py` ausführen. Endmaße, Druck-/Stickfähigkeit und Markenfreigabe vor einer Produktion prüfen.
+
 ## Fotografie
 
 Kaltes Seitenlicht, Beton, Stahl, dunkle Kleidung. Nahaufnahmen von Stoff und Veredelung. Zusätzlich echte Front-, Rücken-, Detail- und Fitbilder vor dem Verkaufsstart. Menschen verschiedener Generationen. KI-Assets in `assets/originals/` sind ausschließlich Konzeptmaterial.

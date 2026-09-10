@@ -1,22 +1,15 @@
 from pathlib import Path
 import subprocess,os,json,sys
-STORE='ajfwfu-ih.myshopify.com'
+ROOT=Path(__file__).resolve().parents[1]
+os.chdir(ROOT)
+CONFIG=json.loads(Path('config/store.json').read_text())
+STORE=CONFIG['store']
 CLI=str(Path('node_modules/.bin/shopify').resolve())
-BASE=Path('work/store');BASE.mkdir(exist_ok=True)
-ENV=dict(os.environ,SHOPIFY_CLI_AGENT_INFO='n:Codex|v:desktop|p:OpenAI',SHOPIFY_CLI_AGENT_IDS='s:01a08a70-082a-7ba3-afc7-3dd5b46d6066|r:ost-build|i:root',OPT_OUT_INSTRUMENTATION='true')
-QUERIES={
-'inspect':'''query OSTExisting { pages(first:100) { nodes { id handle title } } collections(first:100) { nodes { id handle title } } metaobjectDefinitions(first:100) { nodes { id type } } }''',
-'metaobjectDefinitionCreate':'''mutation OSTDefinition($definition: MetaobjectDefinitionCreateInput!) { metaobjectDefinitionCreate(definition:$definition) { metaobjectDefinition { id type } userErrors { field message } } }''',
-'metafieldDefinitionCreate':'''mutation OSTMetafield($definition: MetafieldDefinitionInput!) { metafieldDefinitionCreate(definition:$definition) { createdDefinition { id key } userErrors { field message } } }''',
-'pageCreate':'''mutation OSTPage($page: PageCreateInput!) { pageCreate(page:$page) { page { id handle } userErrors { field message } } }''',
-'productSet':'''mutation OSTProduct($input: ProductSetInput!) { productSet(input:$input,synchronous:true) { product { id handle variants(first:20) { nodes { id title } } } userErrors { field message } } }''',
-'collectionCreate':'''mutation OSTCollection($input: CollectionInput!) { collectionCreate(input:$input) { collection { id handle } userErrors { field message } } }''',
-'collectionAddProducts':'''mutation OSTCollectionProducts($id:ID!,$productIds:[ID!]!) { collectionAddProducts(id:$id,productIds:$productIds) { collection { id } userErrors { field message } } }''',
-'metafieldsSet':'''mutation OSTValues($metafields:[MetafieldsSetInput!]!) { metafieldsSet(metafields:$metafields) { metafields { key value } userErrors { field message } } }''',
-'metaobjectUpsert':'''mutation OSTEntry($handle:MetaobjectHandleInput!,$metaobject:MetaobjectUpsertInput!) { metaobjectUpsert(handle:$handle,metaobject:$metaobject) { metaobject { id handle } userErrors { field message } } }''',
-'read':'''query OSTVerify { products(first:30,query:"tag:ost-drop-001") { nodes { id handle status totalInventory metafields(first:10) { nodes { namespace key value } } } } pages(first:30) { nodes { id handle isPublished } } }'''
-}
+BASE=Path('work/store')
+ENV=dict(os.environ,OPT_OUT_INSTRUMENTATION='true')
+QUERIES={p.stem:p.read_text() for p in Path('tools').glob('*.graphql')}
 def prepare():
+    BASE.mkdir(parents=True,exist_ok=True)
     for key,q in QUERIES.items():
         (BASE/(key+'.graphql')).write_text(q)
     statepath=BASE/'state.json'
@@ -25,27 +18,20 @@ def prepare():
 
 def execute(key,variables=None):
  dest=BASE/(key+'-last.json')
- args=[CLI,'store','execute','--store',STORE,'--query-file',str(BASE/(key+'.graphql')),'--json','--output-file',str(dest),'--version','2026-07']
+ args=[CLI,'store','execute','--store',STORE,'--query-file',str(BASE/(key+'.graphql')),'--json','--output-file',str(dest),'--version',CONFIG['api_version']]
  if variables is not None:
   varpath=BASE/(key+'-variables.json');varpath.write_text(json.dumps(variables));args+=['--variable-file',str(varpath)]
  if 'mutation' in QUERIES[key]:args+=['--allow-mutations']
  p=subprocess.run(args,env=ENV,capture_output=True,text=True)
  if p.returncode:raise RuntimeError(key+' '+p.stdout+p.stderr)
- data=json.loads(dest.read_text());data=data.get('data',data)
+ data=json.loads(dest.read_text())
  if data.get('errors'):raise RuntimeError(str(data['errors']))
+ data=data.get('data',data)
  payload=data.get(key,data)
  if payload.get('userErrors'):raise RuntimeError(key+' '+str(payload['userErrors']))
  return payload
-def field(key,type='single_line_text_field',required=False):return {'key':key,'name':key.replace('_',' ').title(),'type':type,'required':required}
-def definition(kind,fields):return {'name':kind.replace('_',' ').upper(),'type':kind,'displayNameKey':'name','access':{'storefront':'PUBLIC_READ'},'capabilities':{'publishable':{'enabled':True},'renderable':{'enabled':True,'data':{'metaTitleKey':'seo_title','metaDescriptionKey':'seo_description'}},'onlineStore':{'enabled':True,'data':{'urlHandle':kind.replace('_','-')}}},'fieldDefinitions':fields}
-common=[field('name',required=True),field('slug'),field('published','boolean'),field('seo_title'),field('seo_description','multi_line_text_field')]
-definitions=[
- definition('ost_archive_person',common+[field('archive_number'),field('birth_year','number_integer'),field('death_year','number_integer'),field('years_display'),field('place'),field('kicker'),field('portrait','file_reference'),field('short_bio','multi_line_text_field'),field('long_bio','rich_text_field'),field('quote','multi_line_text_field'),field('category'),field('linked_product','product_reference')]),
- definition('ost_voice',common+[field('age','number_integer'),field('birthplace'),field('current_place'),field('portrait','file_reference'),field('kicker'),field('story','rich_text_field'),field('statement','multi_line_text_field')]),
- definition('ost_place',common+[field('region'),field('coordinates'),field('portrait','file_reference'),field('kicker'),field('story','rich_text_field')]),
- {'name':'OST Rechteakte INTERN','type':'ost_rights_record','displayNameKey':'name','access':{'storefront':'NONE'},'fieldDefinitions':[field('name',required=True),field('subject_gid'),field('rights_status'),field('rights_notes','multi_line_text_field'),field('rights_holder'),field('license_reference'),field('allowed_products','multi_line_text_field'),field('territories'),field('expires_at','date'),field('consent_reference'),field('reviewed_at','date')]}
-]
-metafields=[field('line'),field('drop'),field('sale_mode'),field('shipping_window'),field('gsm','number_integer'),field('material','multi_line_text_field'),field('production_method'),field('fit'),field('size_guide','rich_text_field')]
+definitions=json.loads(Path('content/metaobject-definitions.json').read_text())
+metafields=json.loads(Path('content/product-metafield-definitions.json').read_text())
 def run(stage):
  statepath=BASE/'state.json';state=json.loads(statepath.read_text()) if statepath.exists() else {'definitions':{},'metafields':{},'pages':{},'products':{},'collections':{}}
  def save():statepath.write_text(json.dumps(state,ensure_ascii=False,indent=2))

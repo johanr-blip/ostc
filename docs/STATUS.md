@@ -8,7 +8,7 @@ Stand: 10.09.2026. Diese Datei ist die Übergabe für andere Agenten. Nicht aus 
 - Produkt-, Collection-, Cart-, Seiten-, Such-, Passwort-, 404- und Metaobject-Templates.
 - Native Shopify-Formulare vorbereitet. Warteliste und Verkauf im Grundzustand deaktiviert.
 - Preorder-Integration über App-Blöcke vorgesehen, aber keine App installiert oder getestet.
-- Drei Bundle-/Produktzustände architektonisch berücksichtigt; Bundle-Section verlinkt echte Shopify-Bundle-Produkte.
+- Die drei Produktzustände Warteliste, Preorder und Live sind vorgesehen; die Bundle-Section kann echte Shopify-Bundle-Produkte verlinken. Diese Bundle-Produkte sind noch nicht angelegt.
 - Sieben KI-Konzeptbilder, optimierte Bilddateien, lokale Archivo-Schrift und Provenienzdokumentation.
 - Shopify: Theme `205871546705` unveröffentlicht hochgeladen, zehn Produktentwürfe, drei Collections, 13 neue Seiten, vier Metaobject-Definitionen und zehn Produkt-Metafield-Definitionen erstellt.
 - Separate interne Rechteakte mit Storefront-Zugriff NONE.
@@ -17,6 +17,8 @@ Stand: 10.09.2026. Diese Datei ist die Übergabe für andere Agenten. Nicht aus 
 ## Remote-Stand
 
 `config/store.json` und `config/shopify-resources.json` enthalten die tatsächlichen IDs. Horizon `205868663121` ist live und wurde nicht bearbeitet. Neue Produkte sind DRAFT mit Bestand null und DENY. Neue Seiten sind unveröffentlicht. Die vorhandene Standardseite `contact` bleibt erhalten.
+
+Das Theme wurde am 10.09.2026 erneut aus der gemeinsamen Repository-Struktur erfolgreich auf dieselbe unveröffentlichte Theme-ID übertragen.
 
 Die private lokale Vorschau zeigt diese Inhalte mit Beispieldaten. Die direkte Shopify-Vorschau kann aufgrund von Shop-Passwort und Draft-Sichtbarkeit abweichen. Produktbilder sind noch nicht an die Shopify-Produktressourcen hochgeladen. Nicht alle lokal sichtbaren Seiten sind im echten Storefront aufrufbar.
 
